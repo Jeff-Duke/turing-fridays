@@ -1,9 +1,12 @@
+const path = require('path');
+
 module.exports = {
   entry: {
     main: './lib/index.js',
   },
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'public'),
+    publicPath: '/public/',
     filename: '[name].bundle.js'
   },
   module: {
@@ -12,7 +15,7 @@ module.exports = {
       { test: /\.scss$/, loader: 'style!css!resolve-url!sass?sourceMap' },
       { test: /\.png$/, loader: 'url-loader', query: { mimetype: 'image/png'} },
       { test: /\.jpg$/, loader: 'url-loader', query: { mimetype: 'image/jpg'} },
-      { test: /\.jsx?$/, exclude: /(node_modules|bower_components)/, loader: 'babel',
+      { test: /\.js?$/, exclude: /(node_modules|bower_components)/, loader: 'babel',
         query: { presets: ['es2015', 'react'], },
       },
     ]
