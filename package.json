@@ -1,0 +1,31 @@
+{
+  "name": "turing-fridays",
+  "version": "0.0.1",
+  "description": "App for tracking Friday activities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeff-Duke/turing-fridays.git"
+  },
+  "author": "Peter Springer, David Kerr, Casey Cross, Kirsten Swanson, Jeff Duke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jeff-Duke/turing-fridays/issues"
+  },
+  "homepage": "https://github.com/Jeff-Duke/turing-fridays#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  }
+}
