@@ -1,7 +1,6 @@
 module.exports = {
   entry: {
     main: './lib/index.js',
-    test: 'mocha!./test/index.js'
   },
   output: {
     path: __dirname,
@@ -9,12 +8,16 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: "style!css" },
-      { test: /\.scss$/, loader: "style!css!sass" },
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015' }
+      { test: /\.css$/, loader: 'style!css' },
+      { test: /\.scss$/, loader: 'style!css!resolve-url!sass?sourceMap' },
+      { test: /\.png$/, loader: 'url-loader', query: { mimetype: 'image/png'} },
+      { test: /\.jpg$/, loader: 'url-loader', query: { mimetype: 'image/jpg'} },
+      { test: /\.jsx?$/, exclude: /(node_modules|bower_components)/, loader: 'babel',
+        query: { presets: ['es2015', 'react'], },
+      },
     ]
   },
   resolve: {
-    extensions: ['',, '.jsx', '.js', '.json', '.scss', '.css']
+    extensions: ['', '.js', '.json', '.scss', '.css']
   }
 };

@@ -4,9 +4,9 @@
   "description": "App for tracking Friday activities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --inline",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "mocha --require test/helpers/setup.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,15 @@
   "bugs": {
     "url": "https://github.com/Jeff-Duke/turing-fridays/issues"
   },
-  "homepage": "https://github.com/Jeff-Duke/turing-fridays#readme",
+  "homepage": "https://github.com/Jeff-Duke/turing-fridays/public/index.html",
   "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   },
