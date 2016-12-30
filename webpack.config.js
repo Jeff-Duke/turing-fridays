@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    main: './lib/index.js',
+    main: './lib/index.js'
   },
   output: {
     path: path.join(__dirname, 'public'),
@@ -14,12 +14,15 @@ module.exports = {
       { test: /\.scss$/, loader: 'style!css!resolve-url!sass?sourceMap' },
       { test: /\.png$/, loader: 'url-loader', query: { mimetype: 'image/png'} },
       { test: /\.jpg$/, loader: 'url-loader', query: { mimetype: 'image/jpg'} },
-      { test: /\.js?$/, exclude: /(node_modules|bower_components)/, loader: 'babel',
-        query: { presets: ['es2015', 'react'], },
+      { test: /\.js?$/, exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015', 'react'],
+        },
       },
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.json', '.scss', '.css']
+    extensions: ['', '.js', '.json', '.jsx', '.scss', '.css']
   }
 };
