@@ -1,0 +1,15 @@
+.SignIn {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+#LogInButton {
+  @include button-format;
+  font-size: 26px;
+  padding: 8px;
+  margin-top: 40px;
+  width: 100px;
+}

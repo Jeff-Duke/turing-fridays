@@ -1,0 +1,13 @@
+@mixin button-format {
+  background: $teal-accent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+  color: #FFF;
+  transition: 0.3s;
+  &:hover {
+    background: darken($teal-accent, 5%);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
