@@ -22,8 +22,11 @@ header {
 
 .UserPhoto {
   border-radius: 50%;
+  clear: right;
+  display: block;
+  float: right;
   height: 70px;
-  margin-left: 130px;
+  margin-top: 10px;
   width: 70px;
 }
 
@@ -31,7 +34,9 @@ header {
   color: #FFF;
   font-family: $open-sans-font;
   font-size: 12px;
+  margin-top: 100px;
   padding: 5px 0 8px 0;
+  text-align: right;
 }
 
 .SignOut {
@@ -42,7 +47,7 @@ header {
 
 @media screen and (max-width: 420px) {
   header {
-    height: 300px;
+    height: 320px;
   }
 
   .HeaderTitle {
@@ -56,11 +61,13 @@ header {
     flex-direction: column;
     float: none;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .UserPhoto {
-    margin-left: 0;
+    height: 100px;
+    margin: 10px 0 0 0;
+    width: 100px;
   }
 
   .Logo {
@@ -70,5 +77,6 @@ header {
   .SignOut {
     font-size: 16px;
     padding: 5px;
+    order: 3;
   }
 }

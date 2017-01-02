@@ -25,12 +25,12 @@
   word-wrap: break-word;
 }
 
-.VoteButton {
+.JoinButton {
   @include button-format;
   font-size: 20px;
   margin: 0 auto;
   margin-top: 10px;
-  width: 80px;
+  width: 70px;
 }
 
 @media screen and (max-width: 780px) {
