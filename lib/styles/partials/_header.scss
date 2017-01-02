@@ -47,7 +47,7 @@ header {
 
 @media screen and (max-width: 420px) {
   header {
-    height: 320px;
+    height: 330px;
   }
 
   .HeaderTitle {
@@ -68,6 +68,10 @@ header {
     height: 100px;
     margin: 10px 0 0 0;
     width: 100px;
+  }
+
+  .UserEmail {
+    margin-top: 10px;
   }
 
   .Logo {
