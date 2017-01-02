@@ -15,6 +15,7 @@
   background: #FFF;
   border: 1px solid $teal-accent;
   border-radius: 5px;
+  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -28,11 +29,19 @@
   @include button-format;
   font-size: 20px;
   margin: 0 auto;
+  margin-top: 10px;
   width: 80px;
 }
 
 @media screen and (max-width: 780px) {
   .AllSpikes {
     padding: 20px 10px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .SpikesTitle {
+    font-size: 26px;
+    margin-top: 40px;
   }
 }

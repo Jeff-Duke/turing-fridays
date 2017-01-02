@@ -1,15 +1,24 @@
 .SignIn {
   align-items: center;
+  background-image: url('../../public/img/spike-sessions.png');
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 100vh;
   padding-top: 150px;
 }
 
 #LogInButton {
   @include button-format;
   font-size: 26px;
-  padding: 8px;
   margin-top: 40px;
+  padding: 8px;
   width: 100px;
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
 }
