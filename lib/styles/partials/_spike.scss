@@ -1,8 +1,38 @@
-.spike-card {
+.AllSpikes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.SpikesTitle {
+  font-size: 36px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.SpikeCard {
   background: #FFF;
-  border: 2px solid black;
-  padding: 5px;
+  border: 1px solid $teal-accent;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin: 10px;
+  overflow-wrap: break-word;
+  padding: 15px;
+  width: 350px;
+  word-wrap: break-word;
+}
+
+.VoteButton {
+  @include button-format;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 80px;
+}
+
+@media screen and (max-width: 780px) {
+  .AllSpikes {
+    padding: 20px 10px 20px 10px;
+  }
 }
