@@ -72,7 +72,7 @@ describe('user sign in', () => {
   const wrapper = shallow(<App />);
 
     beforeEach(() => {
-      const newUser = mockUsers[2];
+      const newUser = mockUsers[1];
       wrapper.setState({ user: newUser });
     });
 
