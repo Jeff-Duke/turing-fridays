@@ -1,9 +1,9 @@
 import React from 'react';
 import { expect, assert } from 'chai';
-import App from '../lib/components/App';
 import { shallow, mount, render } from 'enzyme';
-import firebase, { signIn, signOut, reference } from '../firebase';
-import moment from 'moment';
+
+import App from '../lib/components/App';
+import mockUsers from './helpers/mockUsers';
 
 describe('my test bundle', () => {
   it('should work', () => {
@@ -12,28 +12,45 @@ describe('my test bundle', () => {
 });
 
 describe('application', () => {
-  const wrapper = shallow(<App />);
+  context('shallow tests', () => {
+    const wrapper = shallow(<App />);
 
-  it('should have a default user of null', function() {
-    expect(wrapper.state().user).to.equal(null);
+    it('should have a default user of null', function() {
+      expect(wrapper.state().user).to.equal(null);
+    });
+
+    it('should have a default empty array of spikes', () => {
+      expect(wrapper.state().spikes).to.deep.equal([]);
+    });
   });
 
-  it('should have a default empty array of spikes', () => {
-      expect(wrapper.state().spikes).to.deep.equal([]);
+  context('mount tests', () => {
+    const wrapper = mount(<App />);
+    it('has a Sign In component', () => {
+      assert.lengthOf(wrapper.find('SignIn'), 1);
+    });
+  });
+
+  context('mock sign in rendering', () => {
+    const newUser = mockUsers[0];
+    const wrapper = shallow(<App />);
+    wrapper.setState({ user: newUser });
+
+    it('renders as a <div>', () => {
+      assert.equal(wrapper.type(), 'div');
+    });
+
+    it('has a Header component', () => {
+      assert.lengthOf(wrapper.find('Header'), 1);
+    });
+
+    it('has a Spikes component', () => {
+      assert.lengthOf(wrapper.find('Spikes'), 1);
+    });
   });
 });
 
 // **********************************
-
-//   it('should have only one title, one Logo, and the words for each', function() {
-//     const wrapper = mount(<App />);
-//     expect(wrapper.find('.title')).to.have.length(1);
-//     expect(wrapper.find('.HeroLogo')).to.have.length(1);
-//     expect(wrapper.find('.buttonSignIn')).to.have.length(1);
-//     expect(wrapper.text()).to.contain('GetWorkingSign In');
-//   });
-// });
-//
 // describe('ContactList',function(){
 //   it('should have no selected Contact and an empty array of contacts', function() {
 //     const wrapper = shallow(<ContactList />);
@@ -73,12 +90,6 @@ describe('application', () => {
 //   context('shallow tests', () => {
 //
 //     const wrapper = shallow(<App />)
-//
-//     it('renders as a <div>', () => {
-//       assert.equal(wrapper.type(), 'div');
-//     });
-//
-//
 //   });
 //
 //   context('Check for components', () => {
@@ -92,8 +103,7 @@ describe('application', () => {
 //       assert.lengthOf(wrapper.find('UsersList'), 1);
 //     });
 //
-//     it('has a Filter Messages By Input component', () => {
-//       assert.lengthOf(wrapper.find('FilterMessagesByInput'), 1);
+//
 //     });
 //
 //     it('has a Sort Buttons component', () => {
@@ -108,28 +118,6 @@ describe('application', () => {
 //       assert.lengthOf(wrapper.find('MessageInput'), 1);
 //     });
 //   });
-//
-//   context('Check for default state', () => {
-//     const wrapper = mount(<App />);
-//
-//     it('should have a default messages array that is empty', function() {
-//       expect(wrapper.state().messages).to.deep.equal([]);
-//     });
-//
-//     it('should have a default filtered messages array that is empty', function() {
-//       expect(wrapper.state().filteredMessages).to.deep.equal([]);
-//     });
-//
-//     it('should have a default listIsFiltered property that is false', function() {
-//       expect(wrapper.state().listIsFiltered).to.equal(false);
-//     });
-//
-//     it('should have a default user state that is null', function() {
-//       expect(wrapper.state().user).to.deep.equal(null);
-//     });
-//
-//   });
-// });
 //
 // describe('CharacterCount', () => {
 //   const wrapper = shallow(<CharacterCount />);
@@ -146,8 +134,7 @@ describe('application', () => {
 //     const wrapper = mount(<CharacterCount />);
 //
 //     wrapper.setState({ charactersLeft: 20 });
-//
-//     assert.equal(wrapper.state('charactersLeft'), 20);
+//    \\\ assert.equal(wrapper.state('charactersLeft'), 20);
 //   });
 // });
 //
