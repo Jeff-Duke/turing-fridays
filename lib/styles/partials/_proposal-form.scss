@@ -1,55 +1,73 @@
+#SpikeForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 5px;
   width: 50%;
 }
 
-#SpikeForm {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.modal {
+  background-color: rgba(0,0,0,0.9);
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .FormTitle {
-  font-size: 26px;
-  margin: 45px 10px 0 0;
+  color: #FFF;
+  font-size: 30px;
+  margin-top: 150px;
+  text-align: center;
 }
 
 input {
   @include input-fields;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 textarea {
   @include input-fields;
+  height: 100px;
   resize: none;
 }
 
-.SubmitButton {
+.SubmitButton, .CancelButton {
   @include button-format;
   font-size: 16px;
+  margin: 15px 5px;
+  text-align: center;
   width: 75px;
 }
 
-@media screen and (max-width: 420px) {
-  #SpikeForm {
-    align-items: center;
-    flex-direction: column;
-  }
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+@media screen and (max-width: 770px) {
+  form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 420px) {
   form {
     width: 90%;
   }
 
-  .FormTitle {
-    font-size: 26px;
-    margin: 40px 0 0 0;
-  }
-
-  .SubmitButton {
-    margin: 0 auto;
-    margin-top: 10px;
+  .SubmitButton, .CancelButton {
+    margin: 15px 10px;
+    padding: 10px;
   }
 }
