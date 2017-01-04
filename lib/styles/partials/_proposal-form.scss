@@ -43,7 +43,7 @@ textarea {
 }
 
 .SubmitButton, .CancelButton {
-  @include button-format;
+  @include button-format($teal-accent, #FFF);
   font-size: 16px;
   margin: 15px 5px;
   text-align: center;

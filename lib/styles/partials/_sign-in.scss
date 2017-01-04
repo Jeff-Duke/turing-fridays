@@ -8,7 +8,7 @@
 }
 
 #LogInButton {
-  @include button-format;
+  @include button-format($teal-accent, #FFF);
   font-size: 26px;
   margin-top: 40px;
   padding: 8px;

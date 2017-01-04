@@ -40,9 +40,10 @@ header {
 }
 
 .SignOut {
-  @include button-format;
+  @include button-format($teal-accent, #FFF);
   float: right;
   font-size: 14px;
+  width: 75px;
 }
 
 @media screen and (max-width: 420px) {

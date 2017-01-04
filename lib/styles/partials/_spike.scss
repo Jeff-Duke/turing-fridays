@@ -27,11 +27,9 @@
 }
 
 .JoinButton {
-  @include button-format;
-  font-size: 20px;
-  margin: 0 auto;
-  width: 70px;
+  @include button-format($teal-accent, #FFF);
   margin-top: auto;
+  width: 70px;
 }
 
 @media screen and (max-width: 780px) {
