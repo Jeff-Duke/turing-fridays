@@ -31,6 +31,16 @@ form {
   text-align: center;
 }
 
+.SpikeDate {
+  color: #FFF;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+.SpikeDatePicker {
+  margin-left: 20px;
+}
+
 input {
   @include input-fields;
   margin: 15px 0;
