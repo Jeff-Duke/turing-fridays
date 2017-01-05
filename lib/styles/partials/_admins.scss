@@ -13,7 +13,8 @@
 
 .OpenAdminsListButton {
   @include button-format($teal-accent, #FFF);
-  margin: 10px 10px 0 20px;
+  margin: 20px 10px 0 20px;
+  width: 120px;
 }
 
 .CloseListButton {
