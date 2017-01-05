@@ -6,8 +6,7 @@
   padding-top: 100px;
   position: fixed;
   top: 0;
-  transition: .5s;
-  width: 320;
+  width: 320px;
   z-index: 1;
 }
 
@@ -59,14 +58,4 @@
 
 .SortSpikes {
   margin: 10px 10px 0 20px;
-}
-
-@media screen and (max-width: 770px) {
-  .AdminsList {
-    width: 320px;
-  }
-  body {
-    margin-left: 0 !important;
-    transition: 0;
-  }
 }
