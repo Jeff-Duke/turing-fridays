@@ -36,12 +36,13 @@ form {
 
 input {
   @include input-fields;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 textarea {
   @include input-fields;
-  height: 100px;
+  height: 80px;
+  margin: 15px 0;
   resize: none;
 }
 
@@ -50,6 +51,7 @@ input[type=date] {
 }
 
 .SpikeDatePicker {
+  height: 25px;
   margin-left: 10px;
 }
 
