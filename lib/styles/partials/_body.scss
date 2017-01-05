@@ -31,3 +31,9 @@ label {
   color: #FFF;
   font-family: $open-sans-font;
 }
+
+button:disabled,
+button:disabled:hover {
+  background-color: darken(#FFF, 10%);
+  cursor: not-allowed;
+}
