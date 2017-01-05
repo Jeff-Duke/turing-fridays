@@ -4,7 +4,6 @@ import { shallow, mount } from 'enzyme';
 
 import App from '../lib/components/App';
 import mockUsers from './helpers/mockUsers';
-import allAdmins from '../lib/allAdmins';
 
 describe('my test bundle', () => {
   it('should work', () => {
@@ -48,11 +47,11 @@ describe('admin login', () => {
     wrapper.setState({ user: adminUser });
     let allAdmins = [ adminUser.email ];
 
-    it('renders as a <div>', () => {
-      assert.equal(wrapper.type(), 'div');
+    it('renders as a <section>', () => {
+      assert.equal(wrapper.type(), 'section');
     });
 
-    it('the div has a class called Application', () => {
+    it('the section has a class called Application', () => {
       expect(wrapper.hasClass('Application')).to.equal(true);
     });
 
@@ -82,11 +81,11 @@ describe('user sign in', () => {
 
     context('mock sign in rendering', () => {
 
-    it('renders as a <div>', () => {
-      assert.equal(wrapper.type(), 'div');
+    it('renders as a <section>', () => {
+      assert.equal(wrapper.type(), 'section');
     });
 
-    it('the div has a class called Application', () => {
+    it('the section has a class called Application', () => {
       expect(wrapper.hasClass('Application')).to.equal(true);
     });
 

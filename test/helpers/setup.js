@@ -10,7 +10,7 @@ global.document = require('jsdom').jsdom(`
     <title>Fridays</title>
   </head>
   <body>
-    <div id='app'></div>
+    <section id='app'></section>
   </body>
 `);
 
