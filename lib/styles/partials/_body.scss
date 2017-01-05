@@ -4,6 +4,7 @@
 
 body {
   background: whitesmoke;
+  transition: margin-left .5s;
 }
 
 h1 {
@@ -30,6 +31,10 @@ span {
 label {
   color: #FFF;
   font-family: $open-sans-font;
+}
+
+select {
+  margin: 10px 10px 0 0;
 }
 
 button:disabled,
