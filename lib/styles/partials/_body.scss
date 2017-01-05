@@ -34,5 +34,6 @@ label {
 
 button:disabled,
 button:disabled:hover {
-  background-color: $light-gray-text-color;
+  background-color: darken(#FFF, 10%);
+  cursor: not-allowed;
 }
