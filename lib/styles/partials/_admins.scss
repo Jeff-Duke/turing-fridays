@@ -59,3 +59,13 @@
 .SortSpikes {
   margin: 10px 10px 0 20px;
 }
+
+@media screen and (max-width: 770px) {
+  .AdminsList {
+    width: 320px;
+  }
+  body {
+    margin-left: 0 !important;
+    transition: 0;
+  }
+}
