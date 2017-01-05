@@ -26,17 +26,9 @@
   }
 }
 
-.DeleteAdminButton {
-  @include button-format($teal-accent, #FFF);
-  border-radius: 50%;
-  font-size: 14px;
-  margin-left: 5px;
-}
-
 .ApproveButton,
 .DeleteButton {
   @include button-format(#FFF, $teal-accent);
   margin-bottom: 5px;
   width: 150px;
 }
- 

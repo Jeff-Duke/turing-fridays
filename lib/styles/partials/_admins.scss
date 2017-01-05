@@ -1,1 +1,61 @@
+.AdminsList {
+  background-color: #111;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 0;
+  z-index: 1;
+}
 
+.OpenAdminsListButton {
+  @include button-format($teal-accent, #FFF);
+  margin: 10px 10px 0 20px;
+}
+
+.CloseListButton {
+  @include button-format($teal-accent, #FFF);
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.AdminEmails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px 5px 10px 15px;
+  width: 95%;
+}
+
+.AdminEmail {
+  color: $light-gray-text-color;
+  padding: 10px 0;
+}
+
+.DeleteAdminButton {
+  @include button-format($teal-accent, #FFF);
+  border-radius: 50%;
+  float: right;
+  font-size: 14px;
+}
+
+.AddAdminForm {
+  margin: 0 auto;
+  width: 92%;
+}
+
+.AdminSubmitButton {
+  margin-top: 0px;
+  &:hover {
+    background-color: lighten($light-gray-text-color, 15%);
+    cursor: pointer;
+  }
+}
+
+.SortSpikes {
+  margin: 10px 10px 0 20px;
+}
