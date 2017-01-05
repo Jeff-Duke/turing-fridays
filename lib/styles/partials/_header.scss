@@ -46,9 +46,15 @@ header {
   width: 75px;
 }
 
+.AddSpikeButton {
+  @include button-format($teal-accent, #FFF);
+  margin: 0 10px;
+  width: 120px;
+}
+
 @media screen and (max-width: 420px) {
   header {
-    height: 330px;
+    height: 390px;
   }
 
   .HeaderTitle {
@@ -83,5 +89,14 @@ header {
     font-size: 16px;
     padding: 5px;
     order: 3;
+    width: 90px;
+  }
+
+  .AddSpikeButton {
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 35%;
+    width: 110px;
   }
 }
