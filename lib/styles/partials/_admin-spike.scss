@@ -10,6 +10,28 @@
   }
 }
 
+.ApprovedSpike {
+  background: blanchedAlmond;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  overflow-wrap: normal;
+  padding: 15px;
+  width: 350px;
+  word-wrap: normal;
+  word-break: normal;
+  p {
+    color: #000;
+    margin-bottom: 5px;
+  }
+  span {
+    color: rgba(5, 194, 209, 0.9);
+  }
+}
+
 .attendee {
   color: #FFF;
   margin-bottom: 5px;
