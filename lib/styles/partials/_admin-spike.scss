@@ -48,10 +48,6 @@
   }
 }
 
-.location-input-dropdown {
-  margin: auto;
-}
-
 .ApproveButton,
 .DeleteButton {
   @include button-format(#FFF, $teal-accent);
