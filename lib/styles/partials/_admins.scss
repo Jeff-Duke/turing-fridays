@@ -10,6 +10,28 @@
   z-index: 1;
 }
 
+.AnimateList-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.AnimateList-enter.AnimateList-enter-active {
+  opacity: 1;
+  transition: 700ms;
+  width: 320px;
+}
+
+.AnimateList-leave {
+  opacity: 1;
+  width: 320px;
+}
+
+.AnimateList-leave.AnimateList-leave-active {
+  opacity: 0.01;
+  transition: 700ms;
+  width: 0px;
+}
+
 .OpenAdminsListButton {
   @include button-format($teal-accent, #FFF);
   margin: 20px 10px 0 20px;

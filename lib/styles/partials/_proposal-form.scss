@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10% auto;
+  margin: 5% auto;
   width: 60%;
 }
 
@@ -28,6 +28,24 @@ form {
   z-index: 1;
 }
 
+.AnimateForm-enter {
+  opacity: 0.01;
+}
+
+.AnimateForm-enter.AnimateForm-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.AnimateForm-leave {
+  opacity: 1;
+}
+
+.AnimateForm-leave.AnimateForm-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
 .FormTitle {
   color: #FFF;
   font-size: 30px;
@@ -42,7 +60,7 @@ input {
 textarea {
   @include input-fields;
   height: 80px;
-  margin: 15px 0;
+  margin: 10px 0;
   resize: none;
 }
 
