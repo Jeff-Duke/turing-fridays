@@ -50,21 +50,4 @@ describe('application', () => {
     });
   });
 
-
-  //   it('should have a default user of null', function() {
-  //     expect(wrapper.state().user).to.equal(null);
-  //   });
-  //
-  //   it('should have a default empty array of spikes', () => {
-  //     expect(wrapper.state().spikes).to.deep.equal([]);
-  //   });
-  });
-  //
-  // context('mount tests', () => {
-  //   const wrapper = mount(<Admin />);
-  //
-  //   it('has a section with class of SpikeCard', () => {
-  //     assert.lengthOf(wrapper.find('SignIn'), 1);
-  //   });
-  // });
-// });
+});

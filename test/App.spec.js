@@ -45,7 +45,7 @@ describe('admin login', () => {
 
     const adminUser = mockUsers[0];
     wrapper.setState({ user: adminUser });
-    let allAdmins = [ adminUser.email ];
+    wrapper.setState({ admins: [adminUser]});
 
     it('renders as a <section>', () => {
       assert.equal(wrapper.type(), 'section');
