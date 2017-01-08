@@ -8,6 +8,7 @@
   span {
     color: #FFF;
   }
+  position: relative;
 }
 
 .ApprovedSpike {
@@ -59,12 +60,24 @@
   width: 90px;
 }
 
-#AttendeesList {
+.AttendeesList {
   display: none;
+  margin: auto;
 }
 
 .ShowAttendeesButton {
   @include button-format(#FFF, $teal-accent);
   font-size: 16px;
   margin-left: 5px;
+}
+
+.AttendeesModal {
+  background-color: rgba(0,0,0,0.9);
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
