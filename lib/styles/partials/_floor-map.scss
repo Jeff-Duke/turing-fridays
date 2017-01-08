@@ -1,0 +1,97 @@
+.map {
+  background-color: white;
+  height: 440px;
+  margin: auto;
+  width: 750px;
+}
+
+.Modal {
+  display: flex;
+}
+
+.map-svg {
+  margin: auto;
+  position: absolute;
+  z-index: 3;
+}
+
+.map-text {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
+  width: 749px;
+  height: 440px;
+}
+
+.HideMap {
+  @include button-format($teal-accent, #FFF);
+  font-size: 16px;
+  margin: 10px auto;
+  text-align: center;
+  width: 100px;
+}
+
+.classroom {
+  position: absolute;
+  font-size: 12px;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: normal;
+  padding: 5px;
+  font-family: $open-sans-font;
+  color: $dark-gray-text-color;
+}
+.a {
+  width: 120px;
+  left: 165px;
+  top: 20px;
+}
+.b {
+  width: 120px;
+  left: 292px;
+  top: 20px;
+}
+.c {
+  width: 120px;
+  left: 420px;
+  top: 20px;
+}
+
+.d {
+  width: 70px;
+  left: 580px;
+  top: 20px;
+}
+
+.e {
+  width: 75px;
+  left: 277px;
+  top: 330px;
+}
+
+.f {
+  width: 70px;
+  left: 202px;
+  top: 330px;
+}
+.g {
+  width: 70px;
+  left: 95px;
+  top: 330px;
+}
+.h {
+  width: 80px;
+  left: 5px;
+  top: 330px;
+}
+.grand-room {
+  width: 190px;
+  left: 355px;
+  top: 330px;
+}
+.vault {
+  width: 110px;
+  left: 420px;
+  top: 180px;
+}

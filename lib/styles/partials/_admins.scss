@@ -79,5 +79,16 @@
 }
 
 .SortSpikes {
-  margin: 10px 10px 0 20px;
+  float: right;
+  margin: 20px 10px 0 0;
+  select {
+    @include button-format(#FFF, $teal-accent);
+    font-size: 16px;
+    margin-left: 10px;
+    width: 120px;
+  }
+}
+
+.ShowMapButton {
+  @include button-format($teal-accent, #FFF);
 }
