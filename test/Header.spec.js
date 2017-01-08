@@ -12,7 +12,6 @@ describe('Header component', () => {
     createSpike={(e) => this.createSpike(e)}
     toggleForm={() => this.toggleForm()}
   />);
-  // const user = mockUsers[2];
 
   it('should be rendered into a <header> container', () => {
     assert.equal(wrapper.type(), 'header');
@@ -41,6 +40,5 @@ describe('Header component', () => {
 
   it('should have a LoginInfo section', () => {
     expect(wrapper.find('.LoginInfo')).to.have.length(1);
->>>>>>> master
   });
 });

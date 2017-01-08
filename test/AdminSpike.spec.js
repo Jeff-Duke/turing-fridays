@@ -62,32 +62,27 @@ describe('AdminSpike component', () => {
     });
 
     it('should display the correct title of created spike', () => {
-      expect(wrapper.find('.AdminSpikeTitle').text()).to.equal('Graduating');
+      expect(wrapper.find('.SpikeTitle').text()).to.equal('Graduating');
     });
 
     it('should display the correct description of created spike', () => {
-      expect(wrapper.find('.AdminSpikeDescription').text()).to.equal('Make that money!');
+      expect(wrapper.find('.SpikeDescription').text()).to.equal('Make that money!');
     });
 
     it('should display the correct creator of created spike', () => {
-      expect(wrapper.find('.AdminSpikeCreator').text()).to.equal('hellocaseycross@gmail.com');
+      expect(wrapper.find('.SpikeCreator').text()).to.equal('hellocaseycross@gmail.com');
     });
 
     it('should display the correct hosts of created spike', () => {
-      expect(wrapper.find('.AdminSpikeHosts').text()).to.equal('All the Caseys');
+      expect(wrapper.find('.SpikeHosts').text()).to.equal('All the Caseys');
     });
 
     it('should display the correct attendess of created spike if there are none', () => {
-      expect(wrapper.find('.NoSpikeAttendees').text()).to.equal('No students have joined');
+      expect(wrapper.find('.NoSpikeAttendees').text()).to.equal('No students have joined.');
     });
 
     it('should not display a list of attendeees of created spike if none have joined', () => {
       expect(wrapper.find('.attendees')).to.have.length(0);
-    });
-
-    it.skip('should display the correct creation date of created spike', () => {
-      let createTime = moment(mockSpikes[0].createdAt).format("MM-DD-YYYY");
-      expect(wrapper.find('.AdminSpikeCreatedDate').text()).to.equal(createTime);
     });
 
     it('should display the correct session date of created spike', () => {
@@ -96,7 +91,7 @@ describe('AdminSpike component', () => {
     });
 
     it('should display the correct notes of created spike', () => {
-      expect(wrapper.find('.SpikeNotes').text()).to.equal(' no notes');
+      expect(wrapper.find('.SpikeNotes').text()).to.equal('no notes');
     });
 
     it('should display the correct approval status of created spike', () => {
