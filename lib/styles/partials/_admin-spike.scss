@@ -29,28 +29,36 @@
   }
   span {
     color: rgba(5, 194, 209, 0.9);
+    font-family: $open-sans-font;
+    margin-left: 5px;
   }
 }
 
-.attendee {
-  color: #FFF;
-  margin-bottom: 5px;
-}
-
-.location-form {
-  border: 1px solid black;
-  margin: 0 auto;
+.AdminInputs {
   margin-top: auto;
-  padding: 10px;
+  border: 1px solid black;
+  padding: 0px 10px;
   width: 97%;
   input {
     margin: 15px;
   }
+  p {
+    margin: 15px auto;
+  }
 }
 
-.ApproveButton,
+.DropdownSelect {
+  @include button-format(#FFF, $teal-accent);
+  width: 150px;
+  font-size: 16px;
+}
+
 .DeleteButton {
   @include button-format(#FFF, $teal-accent);
-  margin-bottom: 5px;
+  margin-top: 10px;
   width: 150px;
+}
+
+#AttendeesList {
+  display: none;
 }
