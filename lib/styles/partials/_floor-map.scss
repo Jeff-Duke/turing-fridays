@@ -1,0 +1,89 @@
+.map {
+}
+
+.map-svg {
+  margin: auto;
+  position: absolute;
+  z-index: -1;
+}
+
+.map-text {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 749px;
+  height: 440px;
+}
+
+.classroom {
+  position: absolute;
+  font-size: 12px;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  word-break: normal;
+  padding: 5px;
+}
+.a {
+  width: 120px;
+  left: 165px;
+  top: 20px;
+  outline: 2px solid black;
+}
+.b {
+  width: 120px;
+  left: 292px;
+  top: 20px;
+  outline: 2px solid black;
+}
+.c {
+  width: 120px;
+  left: 420px;
+  top: 20px;
+  outline: 2px solid black;
+}
+
+.d {
+  width: 70px;
+  left: 580px;
+  top: 20px;
+  outline: 2px solid black;
+}
+
+.e {
+  width: 75px;
+  left: 277px;
+  top: 330px;
+  outline: 2px solid black;
+}
+
+.f {
+  width: 70px;
+  left: 202px;
+  top: 330px;
+  outline: 2px solid black;
+}
+.g {
+  width: 70px;
+  left: 95px;
+  top: 330px;
+  outline: 2px solid black;
+}
+.h {
+  width: 80px;
+  left: 5px;
+  top: 330px;
+  outline: 2px solid black;
+}
+.grand-room {
+  width: 190px;
+  left: 355px;
+  top: 330px;
+  outline: 2px solid black;
+}
+.vault {
+  width: 110px;
+  left: 420px;
+  top: 180px;
+  outline: 2px solid black;
+}
