@@ -49,16 +49,22 @@
 
 .DropdownSelect {
   @include button-format(#FFF, $teal-accent);
+  font-size: 17px;
   width: 150px;
-  font-size: 16px;
 }
 
 .DeleteButton {
-  @include button-format(#FFF, $teal-accent);
+  @include button-format(rgba(255, 0, 0, .5), #FFF);
   margin-top: 10px;
-  width: 150px;
+  width: 90px;
 }
 
 #AttendeesList {
   display: none;
+}
+
+.ShowAttendeesButton {
+  @include button-format(#FFF, $teal-accent);
+  font-size: 16px;
+  margin-left: 5px;
 }
