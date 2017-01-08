@@ -6,8 +6,10 @@ const mockSpikes = [
     createdAt: 1474319324550,
     createdBy: 'hellocaseycross@gmail.com',
     appr: true,
+    hosts: 'All the Caseys',
     count: 0,
     location: 'Classroom A',
+    notes: 'no notes',
     spikeDate: 1483315200000,
     user: {
         displayName: "Casey Cross",
@@ -22,8 +24,10 @@ const mockSpikes = [
     createdAt: 1474314439371,
     createdBy: 'atyoungdesign@gmail.com',
     appr: false,
+    hosts: 'Mr. Young',
     count: 5,
     location: 'Classroom A',
+    notes: '',
     spikeDate: 1483315289400,
     user: {
         displayName: "Andy Young",
@@ -38,8 +42,10 @@ const mockSpikes = [
     createdAt: 1474319324550,
     createdBy: 'kswanie21@gmail.com',
     appr: true,
+    hosts: 'Kirsten and Kyle',
     count: 0,
     location: 'Classroom F',
+    notes: 'none',
     spikeDate: 1483315200000,
     user: {
         displayName: 'Kirsten Swanson',

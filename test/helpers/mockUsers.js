@@ -6,6 +6,11 @@ const mockUsers = [
   { displayName: 'Andy Young',
     email: 'atyoungdesign@gmail.com',
     uid: 'aL0MeDz7oXRqtSBPRYguthVf5aw2'
+  },
+  { displayName: 'Kirsten Swanson',
+    email: 'kswanie21@gmail.com',
+    uid: 'mL0MeDz7oXRqtsbPRYguthVf5aw4'
+
   }
 ];
 

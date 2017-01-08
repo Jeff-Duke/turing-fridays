@@ -1,4 +1,4 @@
-mport React from 'react';
+import React from 'react';
 import { expect, assert } from 'chai';
 import { shallow, mount } from 'enzyme';
 import App from '../lib/components/App';
@@ -20,12 +20,3 @@ describe('Header component', () => {
     });
   });
 });
-
-i        <h1 className='SpikesTitle'>Spikes</h1>
-        <section className='AllSpikes AllAdminSpikes'>
-          {allSpikes}
-        </section>
-      </section>
-    )
-  }
-}
