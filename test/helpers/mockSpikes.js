@@ -11,11 +11,6 @@ const mockSpikes = [
     location: 'Classroom A',
     notes: 'no notes',
     spikeDate: 1483315200000,
-    // user: {
-    //     displayName: "Casey Cross",
-    //     email: "hellocaseycross@gmail.com",
-    //     uid: "oSMIlUTN5OZOVY9pYfEi1PXCv9q1"
-    // }
   },
   {
     key: "-KS3GtKnWB_XZKjgb0iQ",
@@ -29,11 +24,6 @@ const mockSpikes = [
     location: '',
     notes: '',
     spikeDate: 1483315289400,
-    // user: {
-    //     displayName: "Andy Young",
-    //     email: "atyoungdesign@gmail.com",
-    //     uid: "aL0MeDz7oXRqtSBPRYguthVf5aw2"
-    // }
   },
   {
     key: "-KS3GtKnWB_XZKj94ciJ",
@@ -47,11 +37,6 @@ const mockSpikes = [
     location: 'Classroom F',
     notes: 'BYO-Motorcycle',
     spikeDate: 1483315200000,
-    // user: {
-    //     displayName: 'Kirsten Swanson',
-    //     email: "kswanie21@gmail.com",
-    //     uid: "8opUzbSXdxOJcKgukMF4oIMPTu12"
-    // }
   }
 ];
 
