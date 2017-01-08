@@ -7,7 +7,10 @@
   }
   span {
     color: #FFF;
+    font-family: $open-sans-font;
+    margin-left: 5px;
   }
+  position: relative;
 }
 
 .ApprovedSpike {
@@ -29,28 +32,54 @@
   }
   span {
     color: rgba(5, 194, 209, 0.9);
+    font-family: $open-sans-font;
+    margin-left: 5px;
   }
 }
 
-.attendee {
-  color: #FFF;
-  margin-bottom: 5px;
-}
-
-.location-form {
-  border: 1px solid black;
-  margin: 0 auto;
+.AdminInputs {
   margin-top: auto;
-  padding: 10px;
+  border: 1px solid black;
+  padding: 0px 10px;
   width: 97%;
   input {
     margin: 15px;
   }
+  p {
+    margin: 15px auto;
+  }
 }
 
-.ApproveButton,
-.DeleteButton {
+.DropdownSelect {
   @include button-format(#FFF, $teal-accent);
-  margin-bottom: 5px;
+  font-size: 17px;
   width: 150px;
+}
+
+.DeleteButton {
+  @include button-format(rgba(255, 0, 0, .5), #FFF);
+  margin-top: 10px;
+  width: 90px;
+}
+
+.AttendeesList {
+  display: none;
+  margin: auto;
+}
+
+.ShowAttendeesButton {
+  @include button-format(#FFF, $teal-accent);
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.AttendeesModal {
+  background-color: rgba(0,0,0,0.9);
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
