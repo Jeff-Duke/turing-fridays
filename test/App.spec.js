@@ -59,13 +59,12 @@ describe('admin login', () => {
       assert.lengthOf(wrapper.find('Header'), 1);
     });
 
-    it('has an Admin component', () => {
+    it.skip('has an Admin component', () => {
       assert.lengthOf(wrapper.find('Admin'), 1);
     });
 
   });
 });
-
 
 describe('user sign in', () => {
   const wrapper = shallow(<App />);
