@@ -11,7 +11,7 @@ describe('my test bundle', () => {
   });
 });
 
-describe('application', () => {
+describe('Application', () => {
   const wrapper = shallow(<App />);
 
   context('shallow tests', () => {

@@ -8,7 +8,7 @@ import AdminSpike from '../lib/components/AdminSpike';
 import mockUsers from './helpers/mockUsers';
 import mockSpikes from './helpers/mockSpikes';
 
-describe('application', () => {
+describe('Admin component', () => {
 
   context('shallow tests', () => {
 
@@ -62,7 +62,7 @@ describe('application', () => {
         deleteSpike={(spike) => this.deleteSpike(spike)}
         newAdmin={(email) => this.newAdmin(email)}
         removeAdmin={(index) => this.removeAdmin(index)}
-        user={mockUsers[0]}
+        user={mockUsers[2]}
       />);
 
     it('Admin component should exist', () => {

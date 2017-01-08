@@ -1,6 +1,6 @@
 const mockSpikes = [
   {
-    key: "-KS3GtKnWB_XZKjgb0iJ",
+    key: "-KS3GtKnWB_XxKytb0iJ",
     title: "Graduating",
     description: 'Make that money!',
     createdAt: 1483644828448,
@@ -38,7 +38,7 @@ const mockSpikes = [
     }
   },
   {
-    key: "-KS3GtKnWB_XZKjgb0iJ",
+    key: "-KS3GtKnWB_XZKj94ciJ",
     title: "Motorbike Madness",
     description: 'Put on your leather jacket and let\'s ride!',
     createdAt: 1474319324550,
@@ -48,7 +48,7 @@ const mockSpikes = [
     count: 2,
     attendees: ['hellocaseycross@gmail.com', 'peterspringer829@gmail.com'],
     location: 'Classroom F',
-    notes: 'none',
+    notes: 'BYO-Motorcycle',
     spikeDate: 1483315200000,
     user: {
         displayName: 'Kirsten Swanson',
