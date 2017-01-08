@@ -1,7 +1,6 @@
 import React from 'react';
 import { expect, assert } from 'chai';
 import { shallow, mount } from 'enzyme';
-
 import App from '../lib/components/App';
 import mockUsers from './helpers/mockUsers';
 
@@ -65,7 +64,6 @@ describe('admin login', () => {
 
   });
 });
-
 
 describe('user sign in', () => {
   const wrapper = shallow(<App />);
