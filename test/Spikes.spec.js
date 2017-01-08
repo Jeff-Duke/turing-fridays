@@ -8,12 +8,13 @@ import mockSpikes from './helpers/mockSpikes';
 
 
 describe('Spikes component', () => {
-  const wrapper = shallow(<Spikes
-    createSpike={(e) => this.createSpike(e)}
-    spikes={mockSpikes}
-    user={mockUsers[2]}
-    updateCount={(spike) => this.updateCount(spike)}
-                          />);
+  const wrapper = shallow(
+    <Spikes
+      createSpike={(e) => this.createSpike(e)}
+      spikes={mockSpikes}
+      user={mockUsers[2]}
+      updateCount={(spike) => this.updateCount(spike)}
+    />);
 
   it('Spikes component should exist', () => {
     expect(wrapper).to.exist;
