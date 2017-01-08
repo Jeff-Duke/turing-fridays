@@ -33,8 +33,20 @@ describe('application', () => {
       expect(wrapper.hasClass('Admin')).to.equal(true);
     });
 
-    it('should have a dateFilter state', () => {
+    it('should have a default filter state of "all"', () => {
+      expect(wrapper.state().filter).to.equal('all');
+    });
+
+    it('should have a default dateFilter state of "all"', () => {
       expect(wrapper.state().dateFilter).to.equal('all');
+    });
+
+    it('should have a default adminList state of false', () => {
+      expect(wrapper.state().adminList).to.equal(false);
+    });
+
+    it('should render three AdminSpikes if three were submitted', () => {
+      expect(wrapper.find('AdminSpike')).to.have.length(3);
     });
   });
 
