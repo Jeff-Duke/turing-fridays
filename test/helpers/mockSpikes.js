@@ -3,7 +3,7 @@ const mockSpikes = [
     key: "-KS3GtKnWB_XZKjgb0iJ",
     title: "Graduating",
     description: 'Make that money!',
-    createdAt: 1474319324550,
+    createdAt: 1483644828448,
     createdBy: 'hellocaseycross@gmail.com',
     appr: true,
     hosts: 'All the Caseys',

@@ -1,6 +1,8 @@
 import React from 'react';
 import { expect, assert } from 'chai';
 import { shallow, mount } from 'enzyme';
+import moment from 'moment';
+
 
 import AdminSpike from '../lib/components/AdminSpike';
 import mockUsers from './helpers/mockUsers';
@@ -83,16 +85,22 @@ describe('AdminSpike component', () => {
       expect(wrapper.find('.attendees')).to.have.length(0);
     });
 
-    it.skip('should display the correct creation date of created spike', () => {
-      expect(wrapper.find('.AdminSpikeCreatedDate').text()).to.equal('');
+    it('should display the correct creation date of created spike', () => {
+      let createTime = moment(mockSpikes[0].createdAt).format("MM-DD-YYYY");
+      expect(wrapper.find('.AdminSpikeCreatedDate').text()).to.equal(createTime);
     });
 
-    it.skip('should display the correct session date of created spike', () => {
-      expect(wrapper.find('.SpikeSessionDate').text()).to.equal('');
+    it('should display the correct session date of created spike', () => {
+      let spikeTime = ' ' + moment(mockSpikes[0].spikeDate).format("MM-DD-YYYY");
+      expect(wrapper.find('.SpikeSessionDate').text()).to.equal(spikeTime);
     });
 
     it('should display the correct notes of created spike', () => {
       expect(wrapper.find('.SpikeNotes').text()).to.equal(' no notes');
+    });
+
+    it('should display the correct approval status of created spike', () => {
+      expect(wrapper.find('.ApprovalStatus').text()).to.equal('Approved');
     });
   });
 
