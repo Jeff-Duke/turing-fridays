@@ -66,11 +66,33 @@ describe('AdminSpike component', () => {
     it('should display the correct description of created spike', () => {
       expect(wrapper.find('.AdminSpikeDescription').text()).to.equal('Make that money!');
     });
-    it('should display the correct title of created spike', () => {
-      expect(wrapper.find('.AdminSpikeTitle').text()).to.equal('Graduating');
+
+    it('should display the correct creator of created spike', () => {
+      expect(wrapper.find('.AdminSpikeCreator').text()).to.equal('hellocaseycross@gmail.com');
     });
-    it('should display the correct title of created spike', () => {
-      expect(wrapper.find('.AdminSpikeTitle').text()).to.equal('Graduating');
+
+    it('should display the correct hosts of created spike', () => {
+      expect(wrapper.find('.AdminSpikeHosts').text()).to.equal('All the Caseys');
+    });
+
+    it('should display the correct attendess of created spike if there are none', () => {
+      expect(wrapper.find('.AdminSpikeAttendees').text()).to.equal('No students have joined');
+    });
+
+    it('should not display a list of attendeees of created spike if none have joined', () => {
+      expect(wrapper.find('.attendees')).to.have.length(0);
+    });
+
+    it.skip('should display the correct creation date of created spike', () => {
+      expect(wrapper.find('.AdminSpikeCreatedDate').text()).to.equal('');
+    });
+
+    it.skip('should display the correct session date of created spike', () => {
+      expect(wrapper.find('.SpikeSessionDate').text()).to.equal('');
+    });
+
+    it('should display the correct notes of created spike', () => {
+      expect(wrapper.find('.SpikeNotes').text()).to.equal(' no notes');
     });
   });
 
