@@ -1,9 +1,14 @@
 .GuestSpeaker {
-  color: $off-white-color;
   font-family: $open-sans-font;
   line-height: 30px;
+  border: 2px solid black;
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+  h2,
   p {
-    color: $off-white-color;
+    color: $dark-gray-color;
+    font-weight: bold;
   }
   span {
     color: $light-gray-color;
@@ -12,6 +17,10 @@
 }
 
 .SpeakerLink {
-  color: $light-gray-color;
-  font-family: $open-sans-font;
+  color: $dark-gray-color;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: $light-gray-color;
+  }
 }
