@@ -1,4 +1,4 @@
-#SpikeForm {
+#SpikeForm, #SpeakerForm {
   align-items: center;
   background: $dark-gray-color;
   border-radius: 10px;
@@ -50,15 +50,20 @@ form {
   padding-top: 15px;
 }
 
+.SpeakerFormTitle {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 input {
   @include input-fields;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 textarea {
   @include input-fields;
   height: 80px;
-  margin: 10px 0;
+  margin: 8px 0;
   resize: none;
 }
 
@@ -86,7 +91,7 @@ input[type=date] {
 }
 
 @media screen and (max-width: 770px) {
-  #SpikeForm {
+  #SpikeForm, #SpeakerForm {
     width: 80%;
   }
   form {
@@ -102,9 +107,7 @@ input[type=date] {
     margin: 15px 10px;
     padding: 10px;
   }
-}
 
-@media screen and (max-width: 360px) {
   .SpikeDate {
     margin-top: 10px;
   }

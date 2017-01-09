@@ -34,7 +34,7 @@
 
 .OpenAdminsListButton {
   @include button-format($teal-accent, #FFF);
-  margin: 20px 10px 0 20px;
+  margin: 20px 0 0 20px;
   width: 120px;
 }
 
@@ -89,6 +89,13 @@
   }
 }
 
-.ShowMapButton {
+.ShowMapButton, .AddSpeakerButton {
   @include button-format($teal-accent, #FFF);
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .ShowMapButton {
+    display: none;
+  }
 }
