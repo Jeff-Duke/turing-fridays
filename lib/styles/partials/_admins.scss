@@ -54,7 +54,7 @@
 }
 
 .AdminEmail {
-  color: $light-gray-text-color;
+  color: $light-gray-color;
   padding: 10px 0;
 }
 
@@ -73,7 +73,7 @@
 .AdminSubmitButton {
   margin-top: 0px;
   &:hover {
-    background-color: lighten($light-gray-text-color, 15%);
+    background-color: lighten($light-gray-color, 15%);
     cursor: pointer;
   }
 }
