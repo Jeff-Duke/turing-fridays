@@ -1,0 +1,17 @@
+.GuestSpeaker {
+  color: $off-white-color;
+  font-family: $open-sans-font;
+  line-height: 30px;
+  p {
+    color: $off-white-color;
+  }
+  span {
+    color: $light-gray-color;
+    margin-left: 5px;
+  }
+}
+
+.SpeakerLink {
+  color: $light-gray-color;
+  font-family: $open-sans-font;
+}

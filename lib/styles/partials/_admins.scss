@@ -34,7 +34,7 @@
 
 .OpenAdminsListButton {
   @include button-format($teal-accent, #FFF);
-  margin: 20px 10px 0 20px;
+  margin: 20px 0 0 20px;
   width: 120px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .AdminEmail {
-  color: $light-gray-text-color;
+  color: $light-gray-color;
   padding: 10px 0;
 }
 
@@ -73,7 +73,7 @@
 .AdminSubmitButton {
   margin-top: 0px;
   &:hover {
-    background-color: lighten($light-gray-text-color, 15%);
+    background-color: lighten($light-gray-color, 15%);
     cursor: pointer;
   }
 }
@@ -89,6 +89,13 @@
   }
 }
 
-.ShowMapButton {
+.ShowMapButton, .AddSpeakerButton {
   @include button-format($teal-accent, #FFF);
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 770px) {
+  .ShowMapButton {
+    display: none;
+  }
 }
