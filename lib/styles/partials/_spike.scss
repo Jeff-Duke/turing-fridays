@@ -25,6 +25,7 @@
 
 .SpikeCard {
   @include spike-cards-format;
+  @include admin-spike-cards-text;
   background: #FFF;
 }
 
