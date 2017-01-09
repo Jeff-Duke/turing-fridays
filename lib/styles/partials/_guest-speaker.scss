@@ -1,17 +1,23 @@
 .GuestSpeaker {
   font-family: $open-sans-font;
   line-height: 30px;
-  border: 2px solid black;
+  border: 2px solid $teal-accent;
   text-align: center;
   width: 80%;
   margin: 30px auto;
-  h2,
+  color: $dark-gray-color;
+  font-weight: bold;
+  font-size: 18px;
+  h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
   p {
-    color: $dark-gray-color;
-    font-weight: bold;
+    margin: 5px 0;
   }
   span {
-    color: $light-gray-color;
+    color: $teal-accent;
+    letter-spacing: .03em;
     margin-left: 5px;
   }
 }
@@ -20,7 +26,8 @@
   color: $dark-gray-color;
   font-weight: bold;
   text-decoration: none;
+  padding-bottom: 5px;
   &:hover {
-    color: $light-gray-color;
+    color: $teal-accent;
   }
 }

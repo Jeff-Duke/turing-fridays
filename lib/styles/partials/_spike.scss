@@ -11,6 +11,18 @@
   text-align: center;
 }
 
+.StudentSpikesButtons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  width: 50%;
+  .ShowMapButton,
+  .DropdownSelect {
+    margin: 0;
+    width: 150px;
+  }
+}
+
 .SpikeCard {
   @include spike-cards-format;
   background: #FFF;
