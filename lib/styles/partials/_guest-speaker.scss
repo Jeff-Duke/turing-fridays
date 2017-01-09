@@ -31,3 +31,11 @@
     color: $teal-accent;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .GuestSpeaker {
+    span {
+      display: block;
+    }
+  }
+}
