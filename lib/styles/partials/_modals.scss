@@ -21,7 +21,30 @@
   width: 0px;
 }
 
-// generic form modal
+// Attendee email list modal
+.AnimateAttendeeList-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.AnimateAttendeeList-enter.AnimateAttendeeList-enter-active {
+  opacity: 1;
+  transition: 700ms;
+  width: 320px;
+}
+
+.AnimateAttendeeList-leave {
+  opacity: 1;
+  width: 320px;
+}
+
+.AnimateAttendeeList-leave.AnimateAttendeeList-leave-active {
+  opacity: 0.01;
+  transition: 700ms;
+  width: 0px;
+}
+
+// Generic form modal
 .AnimateForm-enter {
   opacity: 0.01;
 }

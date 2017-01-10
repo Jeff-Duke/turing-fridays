@@ -22,6 +22,13 @@
   top: 15px;
 }
 
+.CloseAttendeeListButton {
+  @include button-format($teal-accent, #FFF);
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
 .AdminEmails {
   display: flex;
   flex-direction: column;
