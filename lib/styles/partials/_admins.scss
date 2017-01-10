@@ -10,38 +10,22 @@
   z-index: 1;
 }
 
-.AnimateList-enter {
-  opacity: 0.01;
-  width: 0px;
-}
-
-.AnimateList-enter.AnimateList-enter-active {
-  opacity: 1;
-  transition: 700ms;
-  width: 320px;
-}
-
-.AnimateList-leave {
-  opacity: 1;
-  width: 320px;
-}
-
-.AnimateList-leave.AnimateList-leave-active {
-  opacity: 0.01;
-  transition: 700ms;
-  width: 0px;
-}
-
 .OpenAdminsListButton {
   @include button-format($teal-accent, #FFF);
   margin: 20px 0 0 20px;
-  width: 120px;
 }
 
 .CloseListButton {
   @include button-format($teal-accent, #FFF);
   position: absolute;
   right: 15px;
+  top: 15px;
+}
+
+.CloseAttendeeListButton {
+  @include button-format($teal-accent, #FFF);
+  position: absolute;
+  left: 15px;
   top: 15px;
 }
 
@@ -89,7 +73,11 @@
   }
 }
 
-.ShowMapButton, .AddSpeakerButton {
+.AdminButtons {
+  display: inline-block;
+}
+
+.ShowMapButton, .AddSpeakerButton, .AddGearUpButton {
   @include button-format($teal-accent, #FFF);
   margin-left: 10px;
 }
@@ -97,5 +85,44 @@
 @media screen and (max-width: 770px) {
   .ShowMapButton {
     display: none;
+  }
+  .SortSpikes {
+    float: left;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .AdminButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+      padding: 10px;
+      margin: 8px;
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .AdminInputs {
+    width: 100%;
+  }
+
+  .SortSpikes {
+    margin: 15px 0 0 0;
+    width: 100%;
+  }
+
+  .SortOptions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    select {
+      font-size: 20px;
+      margin: 5px 0;
+      width: 150px;
+    }
   }
 }

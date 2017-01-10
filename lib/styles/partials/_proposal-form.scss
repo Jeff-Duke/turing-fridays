@@ -1,4 +1,4 @@
-#SpikeForm, #SpeakerForm {
+#SpikeForm, #SpeakerForm, #GearUpForm {
   align-items: center;
   background: $dark-gray-color;
   border-radius: 10px;
@@ -26,31 +26,13 @@ form {
   z-index: 2;
 }
 
-.AnimateForm-enter {
-  opacity: 0.01;
-}
-
-.AnimateForm-enter.AnimateForm-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.AnimateForm-leave {
-  opacity: 1;
-}
-
-.AnimateForm-leave.AnimateForm-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
-
 .FormTitle {
   color: #FFF;
   font-size: 30px;
   padding-top: 15px;
 }
 
-.SpeakerFormTitle {
+.SpeakerFormTitle, .GearUpTitle {
   margin-bottom: 10px;
   text-align: center;
 }
@@ -91,7 +73,7 @@ input[type=date] {
 }
 
 @media screen and (max-width: 770px) {
-  #SpikeForm, #SpeakerForm {
+  #SpikeForm, #SpeakerForm, #GearUpForm {
     width: 80%;
   }
   form {

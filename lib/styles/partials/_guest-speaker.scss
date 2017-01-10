@@ -1,14 +1,14 @@
 .GuestSpeaker {
-  font-family: $open-sans-font;
-  line-height: 30px;
   border: 2px solid $teal-accent;
   border-radius: 5px;
+  color: $dark-gray-color;
+  font-family: $open-sans-font;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 30px auto;
   text-align: center;
   width: 80%;
-  margin: 30px auto;
-  color: $dark-gray-color;
-  font-weight: bold;
-  font-size: 18px;
   h2 {
     font-size: 24px;
     margin: 10px 0;
@@ -26,17 +26,32 @@
 .SpeakerLink {
   color: $dark-gray-color;
   font-weight: bold;
-  text-decoration: none;
   padding-bottom: 5px;
+  text-decoration: none;
   &:hover {
     color: $teal-accent;
   }
 }
 
+@media screen and (max-width: 770px) {
+  .GuestSpeaker {
+    margin-top: 70px;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .GuestSpeaker {
+    margin-top: 80px;
+    padding: 10px;
+    width: 90%;
     span {
       display: block;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .GuestSpeaker {
+    margin-top: 130px;
   }
 }

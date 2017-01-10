@@ -1,0 +1,64 @@
+// Admin email list modal
+.AnimateList-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.AnimateList-enter.AnimateList-enter-active {
+  opacity: 1;
+  transition: 700ms;
+  width: 320px;
+}
+
+.AnimateList-leave {
+  opacity: 1;
+  width: 320px;
+}
+
+.AnimateList-leave.AnimateList-leave-active {
+  opacity: 0.01;
+  transition: 700ms;
+  width: 0px;
+}
+
+// Attendee email list modal
+.AnimateAttendeeList-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.AnimateAttendeeList-enter.AnimateAttendeeList-enter-active {
+  opacity: 1;
+  transition: 700ms;
+  width: 320px;
+}
+
+.AnimateAttendeeList-leave {
+  opacity: 1;
+  width: 320px;
+}
+
+.AnimateAttendeeList-leave.AnimateAttendeeList-leave-active {
+  opacity: 0.01;
+  transition: 700ms;
+  width: 0px;
+}
+
+// Generic form modal
+.AnimateForm-enter {
+  opacity: 0.01;
+}
+
+.AnimateForm-enter.AnimateForm-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.AnimateForm-leave {
+  opacity: 1;
+}
+
+.AnimateForm-leave.AnimateForm-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
