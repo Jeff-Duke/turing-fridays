@@ -33,13 +33,25 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 770px) {
   .GuestSpeaker {
     margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .GuestSpeaker {
+    margin-top: 80px;
     padding: 10px;
-    width: 88%;
+    width: 90%;
     span {
       display: block;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .GuestSpeaker {
+    margin-top: 130px;
   }
 }

@@ -70,7 +70,7 @@
   display: inline-block;
 }
 
-.ShowMapButton, .AddSpeakerButton {
+.ShowMapButton, .AddSpeakerButton, .AddGearUpButton {
   @include button-format($teal-accent, #FFF);
   margin-left: 10px;
 }
@@ -79,19 +79,22 @@
   .ShowMapButton {
     display: none;
   }
+  .SortSpikes {
+    float: left;
+    margin: 20px;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .AdminButtons {
-    text-align: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     button {
       padding: 10px;
       margin: 8px;
+      width: 90%;
     }
-  }
-  .SortSpikesTitle {
-    font-size: 18px;
   }
 }
 
@@ -101,15 +104,18 @@
   }
 
   .SortSpikes {
-    float: none;
-    margin: auto;
-    margin-top: 20px;
-    width: 70%;
+    margin: 15px 0 0 0;
+    width: 100%;
   }
-}
 
-@media screen and (max-width: 320px) {
-  .SortSpikes {
-    width: 80%;
+  .SortOptions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    select {
+      font-size: 20px;
+      margin: 5px 0;
+      width: 150px;
+    }
   }
 }

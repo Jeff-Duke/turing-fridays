@@ -1,4 +1,4 @@
-#SpikeForm, #SpeakerForm {
+#SpikeForm, #SpeakerForm, #GearUpForm {
   align-items: center;
   background: $dark-gray-color;
   border-radius: 10px;
@@ -32,7 +32,7 @@ form {
   padding-top: 15px;
 }
 
-.SpeakerFormTitle {
+.SpeakerFormTitle, .GearUpTitle {
   margin-bottom: 10px;
   text-align: center;
 }
@@ -73,7 +73,7 @@ input[type=date] {
 }
 
 @media screen and (max-width: 770px) {
-  #SpikeForm, #SpeakerForm {
+  #SpikeForm, #SpeakerForm, #GearUpForm {
     width: 80%;
   }
   form {
