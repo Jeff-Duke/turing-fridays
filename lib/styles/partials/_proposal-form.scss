@@ -1,6 +1,6 @@
-#SpikeForm {
+#SpikeForm, #SpeakerForm {
   align-items: center;
-  background: $dark-gray-text-color;
+  background: $dark-gray-color;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -18,11 +18,9 @@ form {
 }
 
 .Modal {
-  background-color: rgba(0,0,0,0.9);
+  @include modal;
   height: 100%;
   left: 0;
-  overflow: auto;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -52,20 +50,25 @@ form {
   padding-top: 15px;
 }
 
+.SpeakerFormTitle {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 input {
   @include input-fields;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 textarea {
   @include input-fields;
   height: 80px;
-  margin: 10px 0;
+  margin: 8px 0;
   resize: none;
 }
 
 input[type=date] {
-  color: $dark-gray-text-color;
+  color: $dark-gray-color;
 }
 
 .SpikeDatePicker {
@@ -88,7 +91,7 @@ input[type=date] {
 }
 
 @media screen and (max-width: 770px) {
-  #SpikeForm {
+  #SpikeForm, #SpeakerForm {
     width: 80%;
   }
   form {
@@ -104,9 +107,7 @@ input[type=date] {
     margin: 15px 10px;
     padding: 10px;
   }
-}
 
-@media screen and (max-width: 360px) {
   .SpikeDate {
     margin-top: 10px;
   }

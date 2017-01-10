@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  color: $dark-gray-text-color;
+  color: $dark-gray-color;
   font: {
     family: $open-sans-font;
     size: 50px;
@@ -16,15 +16,10 @@ h1 {
 }
 
 p {
-  color: $dark-gray-text-color;
+  color: $dark-gray-color;
   font-family: $open-sans-font;
   font-weight: bold;
   line-height: 22px;
-}
-
-span {
-  color: $light-gray-text-color;
-  font-weight: bolder;
 }
 
 label {
@@ -34,10 +29,4 @@ label {
 
 select {
   float: right;
-}
-
-button:disabled,
-button:disabled:hover {
-  background-color: darken(#FFF, 10%);
-  cursor: not-allowed;
 }

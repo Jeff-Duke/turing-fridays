@@ -11,19 +11,22 @@
   text-align: center;
 }
 
-.SpikeCard {
-  background: #FFF;
-  border: 1px solid $teal-accent;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.2);
+.StudentSpikesButtons {
   display: flex;
-  flex-direction: column;
-  margin: 10px;
-  overflow-wrap: normal;
-  padding: 15px;
-  width: 350px;
-  word-wrap: normal;
-  word-break: normal;
+  justify-content: space-around;
+  margin: 10px auto;
+  width: 50%;
+  .ShowMapButton,
+  .DropdownSelect {
+    margin: 0;
+    width: 150px;
+  }
+}
+
+.SpikeCard {
+  @include spike-cards-format;
+  @include admin-spike-cards-text;
+  background: #FFF;
 }
 
 .JoinButton {
@@ -41,6 +44,6 @@
 @media screen and (max-width: 420px) {
   .SpikesTitle {
     font-size: 26px;
-    margin-top: 40px;
+    margin-top: 70px;
   }
 }

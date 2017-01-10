@@ -1,0 +1,42 @@
+.GuestSpeaker {
+  font-family: $open-sans-font;
+  line-height: 30px;
+  border: 2px solid $teal-accent;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  margin: 30px auto;
+  color: $dark-gray-color;
+  font-weight: bold;
+  font-size: 18px;
+  h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  p {
+    margin: 5px 0;
+  }
+  span {
+    color: $teal-accent;
+    letter-spacing: .03em;
+    margin-left: 5px;
+  }
+}
+
+.SpeakerLink {
+  color: $dark-gray-color;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 5px;
+  &:hover {
+    color: $teal-accent;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .GuestSpeaker {
+    span {
+      display: block;
+    }
+  }
+}
