@@ -10,32 +10,9 @@
   z-index: 1;
 }
 
-.AnimateList-enter {
-  opacity: 0.01;
-  width: 0px;
-}
-
-.AnimateList-enter.AnimateList-enter-active {
-  opacity: 1;
-  transition: 700ms;
-  width: 320px;
-}
-
-.AnimateList-leave {
-  opacity: 1;
-  width: 320px;
-}
-
-.AnimateList-leave.AnimateList-leave-active {
-  opacity: 0.01;
-  transition: 700ms;
-  width: 0px;
-}
-
 .OpenAdminsListButton {
   @include button-format($teal-accent, #FFF);
   margin: 20px 0 0 20px;
-  width: 120px;
 }
 
 .CloseListButton {
@@ -89,6 +66,10 @@
   }
 }
 
+.AdminButtons {
+  display: inline-block;
+}
+
 .ShowMapButton, .AddSpeakerButton {
   @include button-format($teal-accent, #FFF);
   margin-left: 10px;
@@ -97,5 +78,38 @@
 @media screen and (max-width: 770px) {
   .ShowMapButton {
     display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .AdminButtons {
+    text-align: center;
+    width: 100%;
+    button {
+      padding: 10px;
+      margin: 8px;
+    }
+  }
+  .SortSpikesTitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .AdminInputs {
+    width: 100%;
+  }
+
+  .SortSpikes {
+    float: none;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .SortSpikes {
+    width: 80%;
   }
 }

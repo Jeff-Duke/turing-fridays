@@ -26,24 +26,6 @@ form {
   z-index: 2;
 }
 
-.AnimateForm-enter {
-  opacity: 0.01;
-}
-
-.AnimateForm-enter.AnimateForm-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.AnimateForm-leave {
-  opacity: 1;
-}
-
-.AnimateForm-leave.AnimateForm-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
-
 .FormTitle {
   color: #FFF;
   font-size: 30px;

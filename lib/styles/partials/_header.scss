@@ -55,6 +55,7 @@ header {
 @media screen and (max-width: 420px) {
   header {
     height: 390px;
+    margin-bottom: 10px;
   }
 
   .HeaderTitle {
@@ -93,10 +94,13 @@ header {
   }
 
   .AddSpikeButton {
+    display: flex;
     font-size: 20px;
-    padding: 15px;
-    margin-top: 10px;
-    margin-left: 30%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
     width: 120px;
   }
 }
