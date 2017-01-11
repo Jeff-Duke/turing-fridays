@@ -179,7 +179,16 @@ select {
     display: none;
   }
   .SortSpikes {
-    float: left;
+    float: none;;
     margin: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .SortSpikes {
+    display: flex;
+    select {
+      flex-direction: column;
+    }
   }
 }
