@@ -1,5 +1,5 @@
 .GuestSpeaker {
-  border: 2px solid $teal-accent;
+  border: 2px solid darken($teal-accent, 16%);
   border-radius: 5px;
   color: $dark-gray-color;
   font-family: $open-sans-font;
@@ -17,7 +17,7 @@
     margin: 5px 0;
   }
   span {
-    color: $teal-accent;
+    color: darken($teal-accent, 16%);
     letter-spacing: .03em;
     margin-left: 5px;
   }

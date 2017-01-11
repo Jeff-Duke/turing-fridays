@@ -9,7 +9,7 @@
   outline: none;
   transition: 0.3s;
   &:hover {
-    background: darken($color1, 5%);
+    background: lighten($color1, 10%);
     cursor: pointer;
     transition: 0.3s;
   }
@@ -47,7 +47,7 @@
     margin-bottom: 5px;
   }
   span {
-    color: $teal-accent;
+    color: darken($teal-accent, 17%);
     font-family: $open-sans-font;
     margin-left: 5px;
   }

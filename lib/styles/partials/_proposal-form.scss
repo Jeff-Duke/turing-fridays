@@ -40,6 +40,7 @@ form {
 input {
   @include input-fields;
   margin: 8px 0;
+  width: 100%;
 }
 
 textarea {
@@ -47,6 +48,7 @@ textarea {
   height: 80px;
   margin: 8px 0;
   resize: none;
+  width: 100%;
 }
 
 input[type=date] {
@@ -56,10 +58,11 @@ input[type=date] {
 .SpikeDatePicker {
   height: 25px;
   margin-left: 10px;
+  width: 170px;
 }
 
 .SubmitButton, .CancelButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   font-size: 16px;
   margin: 15px 5px;
   text-align: center;
@@ -80,6 +83,7 @@ input[type=date] {
     width: 70%;
   }
 }
+
 @media screen and (max-width: 420px) {
   form {
     width: 90%;
@@ -94,6 +98,9 @@ input[type=date] {
     margin-top: 10px;
   }
 
+}
+
+@media screen and (max-width: 375px) {
   .SpikeDatePicker {
     margin-left: 0;
   }

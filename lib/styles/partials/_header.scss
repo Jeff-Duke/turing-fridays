@@ -40,14 +40,14 @@ header {
 }
 
 .SignOut {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   float: right;
   font-size: 14px;
   width: 75px;
 }
 
 .AddSpikeButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   margin: 0 10px;
   width: 120px;
 }

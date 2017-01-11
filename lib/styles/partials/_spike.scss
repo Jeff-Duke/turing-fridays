@@ -30,7 +30,7 @@
 }
 
 .JoinButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   margin-top: auto;
   width: 70px;
 }

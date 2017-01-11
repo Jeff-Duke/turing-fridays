@@ -11,19 +11,19 @@
 }
 
 .OpenAdminsListButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   margin: 20px 0 0 20px;
 }
 
 .CloseListButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   position: absolute;
   right: 15px;
   top: 15px;
 }
 
 .CloseAttendeeListButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   position: absolute;
   left: 15px;
   top: 15px;
@@ -43,7 +43,7 @@
 }
 
 .DeleteAdminButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   border-radius: 50%;
   float: right;
   font-size: 14px;
@@ -66,7 +66,7 @@
   float: right;
   margin: 20px 10px 0 0;
   select {
-    @include button-format(#FFF, $teal-accent);
+    @include button-format(#FFF, darken($teal-accent, 15%));
     font-size: 16px;
     margin-left: 10px;
     width: 120px;
@@ -78,7 +78,7 @@
 }
 
 .ShowMapButton, .AddSpeakerButton, .AddGearUpButton {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   margin-left: 10px;
 }
 

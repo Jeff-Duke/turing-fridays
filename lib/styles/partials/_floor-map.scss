@@ -25,7 +25,7 @@
 }
 
 .HideMap {
-  @include button-format($teal-accent, #FFF);
+  @include button-format(darken($teal-accent, 15%), #FFF);
   font-size: 16px;
   margin: 10px auto;
   text-align: center;
