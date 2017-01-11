@@ -44,8 +44,8 @@ describe('Spike component', () => {
     expect(wrapper.find('textarea')).to.have.length(2);
   });
 
-  it('should have one label', () => {
-    expect(wrapper.find('label')).to.have.length(1);
+  it('should have five labels', () => {
+    expect(wrapper.find('label')).to.have.length(5);
   });
 
   it('should have three sections', () => {
