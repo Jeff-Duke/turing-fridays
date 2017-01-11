@@ -26,8 +26,13 @@
 }
 
 .AttendeesList {
-  display: none;
   margin: auto;
+  right: 0;
+  top: 0;
+}
+
+.Attendee {
+  line-height: 20px;
 }
 
 .AttendeesModal {
