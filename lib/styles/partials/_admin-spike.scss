@@ -25,38 +25,9 @@
   }
 }
 
-.DropdownSelect {
-  @include button-format(#FFF, darken($teal-accent, 15%));
-  font-size: 17px;
-  width: 150px;
-}
-
-.DeleteButton {
-  @include button-format(#b85a5a, #FFF);
-  margin-top: 15px;
-  transition: 0.5s;
-  width: 88px;
-  &:hover {
-    color: blanchedAlmond;
-    background: darken(#b85a5a, 8%);
-    transition: 0.5s;
-  }
-}
-
 .AttendeesList {
   display: none;
   margin: auto;
-}
-
-.ShowAttendeesButton {
-  @include button-format(#FFF, darken($teal-accent, 15%));
-  font-size: 16px;
-  margin-left: 5px;
-  &:hover {
-    background: $dark-gray-color;
-    color: $off-white-color;
-    cursor: pointer;
-  }
 }
 
 .AttendeesModal {

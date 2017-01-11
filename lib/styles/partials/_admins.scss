@@ -10,25 +10,6 @@
   z-index: 1;
 }
 
-.OpenAdminsListButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  margin: 20px 0 0 20px;
-}
-
-.CloseListButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  position: absolute;
-  right: 15px;
-  top: 15px;
-}
-
-.CloseAttendeeListButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  position: absolute;
-  left: 15px;
-  top: 15px;
-}
-
 .AdminEmails {
   display: flex;
   flex-direction: column;
@@ -42,67 +23,9 @@
   padding: 10px 0;
 }
 
-.DeleteAdminButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  border-radius: 50%;
-  float: right;
-  font-size: 14px;
-}
-
 .AddAdminForm {
   margin: 0 auto;
   width: 92%;
-}
-
-.AdminSubmitButton {
-  margin-top: 0px;
-  &:hover {
-    background-color: lighten($light-gray-color, 15%);
-    cursor: pointer;
-  }
-}
-
-.SortSpikes {
-  float: right;
-  margin: 20px 10px 0 0;
-  select {
-    @include button-format(#FFF, darken($teal-accent, 15%));
-    font-size: 16px;
-    margin-left: 10px;
-    width: 120px;
-  }
-}
-
-.AdminButtons {
-  display: inline-block;
-}
-
-.ShowMapButton, .AddSpeakerButton, .AddGearUpButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  margin-left: 10px;
-}
-
-@media screen and (max-width: 770px) {
-  .ShowMapButton {
-    display: none;
-  }
-  .SortSpikes {
-    float: left;
-    margin: 20px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .AdminButtons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    button {
-      padding: 10px;
-      margin: 8px;
-      width: 90%;
-    }
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -111,18 +34,7 @@
   }
 
   .SortSpikes {
-    margin: 15px 0 0 0;
-    width: 100%;
-  }
-
-  .SortOptions {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    select {
-      font-size: 20px;
-      margin: 5px 0;
-      width: 150px;
-    }
+    margin: 15px 0 0 10px;
+    width: 90%;
   }
 }

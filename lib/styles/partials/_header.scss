@@ -39,19 +39,6 @@ header {
   text-align: right;
 }
 
-.SignOut {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  float: right;
-  font-size: 14px;
-  width: 75px;
-}
-
-.AddSpikeButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  margin: 0 10px;
-  width: 120px;
-}
-
 @media screen and (max-width: 420px) {
   header {
     height: 390px;
@@ -86,21 +73,4 @@ header {
     display: none;
   }
 
-  .SignOut {
-    font-size: 16px;
-    padding: 5px;
-    order: 3;
-    width: 90px;
-  }
-
-  .AddSpikeButton {
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    margin: auto;
-    margin-top: 15px;
-    padding: 10px;
-    text-align: center;
-    width: 120px;
-  }
 }

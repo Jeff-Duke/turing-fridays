@@ -1,17 +1,18 @@
-@mixin button-format ($color1, $color2) {
+@mixin button-format ($color1, $color2, $width: null, $size: 20px) {
   background: $color1;
   border-radius: 5px;
   border: none;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
   color: $color2;
-  font-size: 20px;
+  font-size: $size;
   margin: 0 auto;
   outline: none;
-  transition: 0.3s;
+  transition: 0.5s;
+  width: $width;
   &:hover {
     background: lighten($color1, 10%);
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
   }
 }
 

@@ -7,14 +7,6 @@
   padding-top: 150px;
 }
 
-#LogInButton {
-  @include button-format(darken($teal-accent, 15%), #FFF);
-  font-size: 26px;
-  margin-top: 40px;
-  padding: 8px;
-  width: 100px;
-}
-
 @media screen and (max-width: 420px) {
   h1 {
     font-size: 40px;

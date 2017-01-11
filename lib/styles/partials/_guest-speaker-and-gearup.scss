@@ -1,4 +1,5 @@
-.GuestSpeaker {
+.GuestSpeaker,
+.GearUp {
   border: 2px solid darken($teal-accent, 16%);
   border-radius: 5px;
   color: $dark-gray-color;
@@ -23,7 +24,7 @@
   }
 }
 
-.SpeakerLink {
+.FridayLink {
   color: $dark-gray-color;
   font-weight: bold;
   padding-bottom: 5px;
@@ -34,13 +35,15 @@
 }
 
 @media screen and (max-width: 770px) {
-  .GuestSpeaker {
+  .GuestSpeaker,
+  .GearUp {
     margin-top: 70px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .GuestSpeaker {
+  .GuestSpeaker,
+  .GearUp {
     margin-top: 80px;
     padding: 10px;
     width: 90%;
@@ -51,7 +54,8 @@
 }
 
 @media screen and (max-width: 375px) {
-  .GuestSpeaker {
+  .GuestSpeaker,
+  .GearUp {
     margin-top: 130px;
   }
 }
