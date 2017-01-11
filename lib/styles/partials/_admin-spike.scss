@@ -30,6 +30,10 @@
   margin: auto;
 }
 
+.Attendee {
+  line-height: 20px;
+}
+
 .AttendeesModal {
   @include modal;
   height: 100%;

@@ -1,4 +1,4 @@
-#SpikeForm, #SpeakerForm, #GearUpForm {
+#SpikeForm, #SpeakerFormModal, #GearUpFormModal {
   align-items: center;
   background: $dark-gray-color;
   border-radius: 10px;
@@ -68,7 +68,7 @@ input[type=date] {
 }
 
 @media screen and (max-width: 770px) {
-  #SpikeForm, #SpeakerForm, #GearUpForm {
+  #SpikeForm, #SpeakerFormModal, #GearUpFormModal {
     width: 80%;
   }
   form {

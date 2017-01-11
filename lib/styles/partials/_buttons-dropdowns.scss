@@ -3,7 +3,7 @@ select {
 }
 
 #LogInButton {
-  @include button-format($darker-accent, 100px, 26px);
+  @include button-format($darker-accent, $off-white-color, 100px, 26px);
   margin-top: 40px;
   padding: 8px;
 }
@@ -113,9 +113,9 @@ select {
 
 .StudentSpikesButtons {
   display: flex;
-  justify-content: space-around;
-  margin: 10px auto;
-  width: 50%;
+  justify-content: space-between;
+  margin: 20px auto;
+  width: 25%;
   .ShowMapButton,
   .DropdownSelect {
     margin: 0;
