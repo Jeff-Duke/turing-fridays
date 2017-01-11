@@ -1,11 +1,13 @@
-$teal-accent: #05c2d1;
-
 $dark-gray-color: #3c4040;
+
+$dark-green-color: #01373c;
 
 $light-gray-color: #7c8c8e;
 
 $off-white-color: #e8eaeb;
 
-$dark-green-color: #01373c;
+$teal-accent: #05c2d1;
+
+$darker-accent: darken($teal-accent, 15%);
 
 $open-sans-font: 'Open Sans', sans-serif;

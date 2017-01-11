@@ -1,0 +1,185 @@
+select {
+  float: right;
+}
+
+#LogInButton {
+  @include button-format($darker-accent, 100px, 26px);
+  margin-top: 40px;
+  padding: 8px;
+}
+
+.DropdownSelect {
+  @include button-format($darker-accent, 160px);
+  color: #FFF;
+}
+
+.DeleteButton {
+  @include button-format(#f78484, #FFF, 88px);
+  margin-top: 15px;
+  &:hover {
+    background: darken(#b85a5a, 8%);
+    color: blanchedAlmond;
+  }
+}
+
+.ShowAttendeesButton {
+  @include button-format(#FFF, $darker-accent, $size: 16px);
+  margin-left: 5px;
+  &:hover {
+    background: $dark-gray-color;
+    color: $off-white-color;
+  }
+}
+
+.OpenAdminsListButton,
+.CloseListButton,
+.CloseAttendeeListButton,
+.ShowMapButton,
+.AddSpeakerButton,
+.AddGearUpButton,
+.AdminSubmitButton {
+  @include button-format($darker-accent, #FFF);
+}
+
+.OpenAdminsListButton {
+  margin: 20px 10px 0 20px;
+}
+
+.CloseListButton {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.CloseAttendeeListButton {
+  left: 15px;
+  position: absolute;
+  top: 15px;
+}
+
+.DeleteAdminButton {
+  @include button-format($darker-accent, #FFF, $size: 14px);
+  border-radius: 50%;
+  float: right;
+}
+
+.AdminSubmitButton {
+  margin-top: 0px;
+  &:hover {
+    background-color: lighten($light-gray-color, 15%);
+  }
+}
+
+.SortSpikes {
+  float: right;
+  margin: 20px 10px 0 0;
+  select {
+    @include button-format(#FFF, $darker-accent, 120px, 16px);
+    margin-left: 10px;
+  }
+}
+
+.AdminButtons {
+  display: inline-block;
+}
+
+.AddSpeakerButton,
+.AddGearUpButton {
+  margin-left: 10px;
+}
+
+.SignOut {
+  @include button-format($darker-accent, #FFF, 75px, 14px);
+  float: right;
+}
+
+.AddSpikeButton {
+  @include button-format($darker-accent, #FFF, 120px);
+  margin: 0 10px;
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.SubmitButton,
+.CancelButton {
+  @include button-format($darker-accent, #FFF, 75px, 16px);
+  margin: 15px 5px;
+  text-align: center;
+}
+
+.StudentSpikesButtons {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px auto;
+  width: 50%;
+  .ShowMapButton,
+  .DropdownSelect {
+    margin: 0;
+    width: 150px;
+  }
+}
+
+.JoinButton {
+  @include button-format($darker-accent, #FFF, 70px);
+  margin-top: auto;
+}
+
+@media screen and (max-width: 420px) {
+  .AdminButtons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    button {
+      margin: 8px;
+      padding: 10px;
+      width: 90%;
+    }
+  }
+
+  .SignOut {
+    font-size: 16px;
+    order: 3;
+    padding: 5px;
+    width: 90px;
+  }
+
+  .AddSpikeButton {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+  }
+
+  .SubmitButton,
+  .CancelButton {
+    margin: 15px 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  .AddSpeakerButton {
+    margin-left: 5px;
+  }
+
+  .OpenAdminsListButton {
+    margin-right: 5px;
+  }
+
+  .ShowMapButton {
+    display: none;
+  }
+  .SortSpikes {
+    float: left;
+    margin: 20px;
+  }
+}
