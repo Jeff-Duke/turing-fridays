@@ -16,12 +16,12 @@
 }
 
 .map-text {
+  height: 440px;
+  left: 0px;
   position: relative;
   top: 0px;
-  left: 0px;
-  z-index: 4;
   width: 749px;
-  height: 440px;
+  z-index: 4;
 }
 
 .HideMap {
@@ -33,72 +33,92 @@
 }
 
 .classroom {
-  position: absolute;
+  color: #111;
+  font-family: $open-sans-font;
   font-size: 12px;
   overflow-wrap: normal;
+  padding: 5px;
+  position: absolute;
   word-wrap: normal;
   word-break: normal;
-  padding: 5px;
-  font-family: $open-sans-font;
-  color: $dark-gray-color;
 }
 
 .a {
-  width: 120px;
-  left: 165px;
-  top: 20px;
+  background: #c979e9;
+  height: 94px;
+  left: 163px;
+  top: 5px;
+  width: 122px;
 }
 
 .b {
-  width: 120px;
-  left: 292px;
-  top: 20px;
+  background: #8FB8DE;
+  height: 100px;
+  left: 291px;
+  top: 5px;
+  width: 122px;
 }
 
 .c {
-  width: 120px;
-  left: 420px;
-  top: 20px;
+  background: #D0E562;
+  height: 103px;
+  left: 418px;
+  top: 5px;
+  width: 124px;
 }
 
 .d {
-  width: 70px;
-  left: 580px;
-  top: 20px;
+  background: #F4D35E;
+  height: 105px;
+  left: 579px;
+  top: 5px;
+  width: 73px;
 }
 
 .e {
-  width: 75px;
+  background: #eea96c;
+  height: 127px;
   left: 277px;
-  top: 330px;
+  top: 308px;
+  width: 74px;
 }
 
 .f {
-  width: 70px;
+  background: #B5E2FA;
+  height: 127px;
   left: 202px;
-  top: 330px;
+  top: 308px;
+  width: 70px;
 }
 
 .g {
-  width: 70px;
-  left: 95px;
-  top: 330px;
+  background: #7ae9c8;
+  height: 127px;
+  left: 92px;
+  top: 308px;
+  width: 74px;
 }
 
 .h {
-  width: 80px;
+  background: #e79df4;
+  height: 127px;
   left: 5px;
-  top: 330px;
+  top: 308px;
+  width: 82px;
 }
 
 .grand-room {
-  width: 190px;
+  background: #fa7a7a;
+  height: 127px;
   left: 355px;
-  top: 330px;
+  top: 308px;
+  width: 190px;
 }
 
 .vault {
-  width: 110px;
-  left: 420px;
-  top: 180px;
+  background: #59F8E8;
+  height: 113px;
+  left: 421px;
+  top: 162px;
+  width: 111px;
 }

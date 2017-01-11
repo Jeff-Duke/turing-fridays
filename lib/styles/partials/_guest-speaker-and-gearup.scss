@@ -34,13 +34,6 @@
   }
 }
 
-@media screen and (max-width: 770px) {
-  .GuestSpeaker,
-  .GearUp {
-    margin-top: 70px;
-  }
-}
-
 @media screen and (max-width: 420px) {
   .GuestSpeaker,
   .GearUp {
@@ -51,11 +44,7 @@
       display: block;
     }
   }
-}
-
-@media screen and (max-width: 375px) {
-  .GuestSpeaker,
   .GearUp {
-    margin-top: 130px;
+    margin-top: 0;
   }
 }
