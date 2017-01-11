@@ -7,7 +7,7 @@ import mockUsers from './helpers/mockUsers';
 import mockSpikes from './helpers/mockSpikes';
 
 describe('Spikes component', () => {
-  
+
   const wrapper = shallow(
   <Spikes
     createSpike={(e) => this.createSpike(e)}
@@ -24,8 +24,8 @@ describe('Spikes component', () => {
     assert.equal(wrapper.type(), 'section');
   });
 
-  it('should have a dateFilter state that equals "all"', () => {
-    expect(wrapper.state().dateFilter).to.equal('all');
+  it('should have a dateFilter state that equals ""', () => {
+    expect(wrapper.state().dateFilter).to.equal('');
   });
 
   it('should have one select', () => {
@@ -40,7 +40,7 @@ describe('Spikes component', () => {
     expect(wrapper.find('.AllSpikes')).to.have.length(1);
   });
 
-  it('should have two sections', () => {
-    expect(wrapper.find('section')).to.have.length(2);
+  it('should have three sections', () => {
+    expect(wrapper.find('section')).to.have.length(3);
   });
 });
