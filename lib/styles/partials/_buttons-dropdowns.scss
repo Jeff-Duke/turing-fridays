@@ -15,7 +15,8 @@ select {
 
 .DeleteButton {
   @include button-format(#b85a5a, #FFF, 88px);
-  margin-top: 15px;
+  margin-top: -35px;
+  margin-bottom: 10px;
   &:hover {
     background: darken(#b85a5a, 8%);
     color: blanchedAlmond;
