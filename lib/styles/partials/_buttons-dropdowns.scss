@@ -15,10 +15,7 @@ select {
 
 .DeleteButton {
   @include button-format(#b85a5a, #FFF, 88px);
-  // margin-top: 15px;
   margin-top: -35px;
-  // below button removed
-  margin-bottom: 10px;
   &:hover {
     background: darken(#b85a5a, 8%);
     color: blanchedAlmond;
@@ -79,6 +76,11 @@ select {
   }
 }
 
+.SortOptions {
+  display: inline-block;
+  padding-top: 5px;
+}
+
 .SortSpikes {
   float: right;
   margin: 20px 10px 0 0;
@@ -120,30 +122,62 @@ select {
   text-align: center;
 }
 
-// .ShowMapButton {
-//   margin-right: 10px;
-// }
-
+//this whole area seems to be the problem
 .StudentSpikesButtons {
-  // below removed
+  // // below removed
   display: flex;
-  // below removed
+  // // below removed
   justify-content: space-between;
   margin: 20px auto;
   // width: 30%;
   width: 25%;
   .ShowMapButton,
   .DropdownSelect {
-    // min-width: 15px;
-    // below removed (both)
-    margin: 0;
-    width: 150px;
+    min-width: 150px;
   }
 }
 
 .JoinButton {
   @include button-format($darker-accent, #FFF, 70px);
   margin-top: auto;
+}
+
+// .ShowMapButton {
+//   margin-right: 10px;
+// }
+
+@media screen and (max-width: 975px) {
+  .SortOptions,
+  .SortSpikes,
+  .AdminButtons {
+    display: block;
+    float: none;
+  }
+
+  .SortOptions {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .SortOptionsButtons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .AdminButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+
+  .OpenAdminsListButton,
+  .ShowMapButton,
+  .AddSpeakerButton,
+  .AddGearUpButton {
+    margin: 0;
+  }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -183,6 +217,7 @@ select {
   }
 }
 
+
 // changed below to 795px
 @media screen and (max-width: 770px) {
 
@@ -194,32 +229,33 @@ select {
     margin-right: 5px;
   }
 
-  // .StudentSpikesButtons
-  // .DropdownSelect {
-  //   margin-bottom: 15px;
-  //   width: 120px;
-  // }
+  .StudentSpikesButtons
+  .DropdownSelect {
+    margin-bottom: 15px;
+    width: 120px;
+  }
 
   .ShowMapButton {
     display: none;
   }
   .SortSpikes {
-    float: right;
     margin: 20px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .SortSpikes {
-    display: flex;
-    select {
-      flex-direction: column;
+    display: block;
+    // flex-direction: column;
+    label {
+      // flex-direction: column;
+      display: block;
     }
   }
 }
 
-// @media screen and (max-width: 1050px) {
-//   .StudentSpikesButtons {
-//     width: 40%;
-//   }
-// }
+@media screen and (max-width: 1050px) {
+  .StudentSpikesButtons {
+    width: 40%;
+  }
+}
