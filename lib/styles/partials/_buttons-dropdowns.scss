@@ -15,7 +15,9 @@ select {
 
 .DeleteButton {
   @include button-format(#b85a5a, #FFF, 88px);
+  // margin-top: 15px;
   margin-top: -35px;
+  // below button removed
   margin-bottom: 10px;
   &:hover {
     background: darken(#b85a5a, 8%);
@@ -45,7 +47,7 @@ select {
 
 .AttendingSpeakerButton {
   margin: 5px 0 15px 0;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
 }
 
 .OpenAdminsListButton {
@@ -118,13 +120,22 @@ select {
   text-align: center;
 }
 
+// .ShowMapButton {
+//   margin-right: 10px;
+// }
+
 .StudentSpikesButtons {
+  // below removed
   display: flex;
+  // below removed
   justify-content: space-between;
   margin: 20px auto;
+  // width: 30%;
   width: 25%;
   .ShowMapButton,
   .DropdownSelect {
+    // min-width: 15px;
+    // below removed (both)
     margin: 0;
     width: 150px;
   }
@@ -172,6 +183,7 @@ select {
   }
 }
 
+// changed below to 795px
 @media screen and (max-width: 770px) {
 
   .AddSpeakerButton {
@@ -181,6 +193,12 @@ select {
   .OpenAdminsListButton {
     margin-right: 5px;
   }
+
+  // .StudentSpikesButtons
+  // .DropdownSelect {
+  //   margin-bottom: 15px;
+  //   width: 120px;
+  // }
 
   .ShowMapButton {
     display: none;
@@ -199,3 +217,9 @@ select {
     }
   }
 }
+
+// @media screen and (max-width: 1050px) {
+//   .StudentSpikesButtons {
+//     width: 40%;
+//   }
+// }
