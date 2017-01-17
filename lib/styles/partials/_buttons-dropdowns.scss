@@ -218,12 +218,13 @@ select {
   .AddSpeakerButton,
   .AddGearUpButton,
   .AddSpikeButton {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .AddSpikeButton,
   .SignOut {
     height: 25px;
+  // margin-top: 10px;
   }
 
   .AddSpikeButton {
@@ -246,7 +247,7 @@ select {
 
   .SignOut {
     font-size: 16px;
-    order: 3;
+    // order: 3;
     padding: 5px;
     width: 90px;
   }
