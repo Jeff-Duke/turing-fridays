@@ -27,19 +27,11 @@
 .FridayLink {
   color: $dark-gray-color;
   font-weight: bold;
-  padding-bottom: 5px;
   text-decoration: none;
   &:hover {
     color: $teal-accent;
   }
 }
-
-// TODO: do we need below?
-// @media screen and (max-width: 955px) {
-//   section.GuestSpeaker {
-//     margin-top: 100px;
-//   }
-// }
 
 @media screen and (max-width: 420px) {
   .GuestSpeaker,
@@ -50,8 +42,5 @@
     span {
       display: block;
     }
-  }
-  .GearUp {
-    margin-top: 0;
   }
 }

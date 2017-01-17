@@ -31,8 +31,6 @@ select {
 }
 
 .OpenAdminsListButton,
-.CloseListButton,
-.CloseAttendeeListButton,
 .ShowMapButton,
 .AddSpeakerButton,
 .AddGearUpButton,
@@ -45,16 +43,19 @@ select {
   margin: 20px 10px 0 20px;
 }
 
-.CloseListButton {
+.CloseListButton,
+.CloseAttendeeListButton {
+  @include button-format($darker-accent, #FFF, 100px);
   position: absolute;
-  right: 15px;
   top: 15px;
+}
+
+.CloseListButton {
+  right: 15px;
 }
 
 .CloseAttendeeListButton {
   left: 15px;
-  position: absolute;
-  top: 15px;
 }
 
 .DeleteAdminButton {
