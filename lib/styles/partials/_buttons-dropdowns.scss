@@ -87,7 +87,6 @@ select {
   width: 35%;
   select {
     @include button-format(#FFF, $darker-accent, 120px, 16px);
-    margin-left: 10px;
   }
 }
 
@@ -101,7 +100,7 @@ select {
 }
 
 .SignOut {
-  @include button-format($darker-accent, #FFF, 75px, 14px);
+  @include button-format($darker-accent, #FFF, 100px, 20px);
   float: right;
 }
 
@@ -137,18 +136,30 @@ select {
   margin: 0;
 }
 
+#AdminSortByDate {
+  margin-left: 15px;
+}
+
 .JoinButton {
   @include button-format($darker-accent, #FFF, 70px);
   margin-top: auto;
 }
 
-@media screen and (max-width: 1070px) {
+#SpikeStatusSort {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1085px) {
   .SortOptions,
   .SortSpikes,
   .AdminButtons {
     display: block;
     float: none;
     width: 100%;
+  }
+
+  #SpikeStatusSort {
+    margin-left: 0px;
   }
 
   .SortOptions {
@@ -202,7 +213,7 @@ select {
   }
 
   .SortSpikes {
-    margin: 20px;
+    margin: 20px 0;
   }
 }
 
@@ -217,18 +228,28 @@ select {
   .ShowMapButton,
   .AddSpeakerButton,
   .AddGearUpButton,
-  .AddSpikeButton {
+  .AddSpikeButton,
+  .SignOut {
     font-size: 16px;
   }
 
   .AddSpikeButton,
   .SignOut {
     height: 25px;
-  // margin-top: 10px;
+  }
+
+  .SignOut {
+    order: 3;
   }
 
   .AddSpikeButton {
-    margin-left: 36%;
+   margin-left: 36vw;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .AddSpikeButton {
+   margin-left: 35vw;
   }
 }
 
@@ -239,22 +260,27 @@ select {
     display: flex;
     flex-direction: column;
     button {
-      font-size: 16px;
+      font-size: 20px;
       margin: 8px;
       width: 70%;
     }
   }
 
+  .SortOptionsButtons {
+    font-size: 20px;
+  }
+
   .SignOut {
-    font-size: 16px;
-    // order: 3;
-    padding: 5px;
-    width: 90px;
+    font-size: 20px;
+    height: 30px;
+    order: 3;
+    width: 120px;
   }
 
   .AddSpikeButton {
     display: flex;
-    font-size: 16px;
+    font-size: 20px;
+    height: 30px;
     justify-content: center;
     margin: auto;
     margin-top: 15px;
