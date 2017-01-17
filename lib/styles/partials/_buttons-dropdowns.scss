@@ -134,13 +134,18 @@ select {
   .ShowMapButton,
   .FilterLabel,
   #UserFilterByDate {
-    margin:10px auto;
+    margin: 10px auto;
     display: block;
     float: none;
     min-width: 150px;
     // margin: 0;
   }
 // }
+
+.AdminShowMapButton {
+  display: inline-block;
+  margin: 0;
+}
 
 .JoinButton {
   @include button-format($darker-accent, #FFF, 70px);
@@ -151,17 +156,17 @@ select {
 //   margin-right: 10px;
 // }
 
+// @media screen and (max-width: 1070px) {
+//   .StudentSpikesButtons {
+//     // width: 40%;
+//   }
+//
+//   .SortSpikes {
+//     width: 40%;
+//   }
+// }
+
 @media screen and (max-width: 1070px) {
-  .StudentSpikesButtons {
-    // width: 40%;
-  }
-
-  .SortSpikes {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 975px) {
   .SortOptions,
   .SortSpikes,
   .AdminButtons {
