@@ -81,8 +81,10 @@ select {
 }
 
 .SortSpikes {
+  display: flex;
   float: right;
-  margin: 20px 10px 0 0;
+  margin-top: 20px;
+  width: 35%;
   select {
     @include button-format(#FFF, $darker-accent, 120px, 16px);
     margin-left: 10px;
@@ -105,7 +107,7 @@ select {
 
 .AddSpikeButton {
   @include button-format($darker-accent, #FFF, 120px);
-  margin: 0 10px;
+  margin: 20px 10px;
 }
 
 .ButtonContainer {
@@ -145,8 +147,12 @@ select {
 //   margin-right: 10px;
 // }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1070px) {
   .StudentSpikesButtons {
+    width: 40%;
+  }
+
+  .SortSpikes {
     width: 40%;
   }
 }
@@ -157,9 +163,11 @@ select {
   .AdminButtons {
     display: block;
     float: none;
+    width: 100%;
   }
 
   .SortOptions {
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 10px;
   }
@@ -167,13 +175,13 @@ select {
   .SortOptionsButtons {
     display: flex;
     justify-content: center;
-    width: 100%;
   }
 
   .AdminButtons {
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
+    width: 100%;
   }
 
   .OpenAdminsListButton,
@@ -210,7 +218,13 @@ select {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+  .AddSpikeButton {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
   .OpenAdminsListButton,
   .ShowMapButton,
   .AddSpeakerButton,
@@ -222,15 +236,14 @@ select {
   .AddSpikeButton,
   .SignOut {
     height: 25px;
-    min-width: 100px;
+  }
+
+  .AddSpikeButton {
+    margin-left: 36%;
   }
 }
 
 @media screen and (max-width: 420px) {
-
-  .AddSpikeButton {
-    padding: 0;
-  }
 
   .AdminButtons {
     align-items: center;
@@ -256,6 +269,7 @@ select {
     justify-content: center;
     margin: auto;
     margin-top: 15px;
+    // padding: 0;
     text-align: center;
     width: 120px;
   }
