@@ -31,7 +31,6 @@ select {
 }
 
 .OpenAdminsListButton,
-.AttendingSpeakerButton,
 .CloseListButton,
 .CloseAttendeeListButton,
 .ShowMapButton,
@@ -41,10 +40,6 @@ select {
   @include button-format($darker-accent, #FFF);
 }
 
-.AttendingSpeakerButton {
-  margin: 5px 0 15px 0;
-  padding: 5px 10px;
-}
 
 .OpenAdminsListButton {
   margin: 20px 10px 0 20px;
@@ -117,7 +112,7 @@ select {
 
 .SubmitButton,
 .CancelButton {
-  @include button-format($darker-accent, #FFF, 75px, 16px);
+  @include button-format($darker-accent, #FFF, 120px, 20px);
   margin: 15px 5px;
   text-align: center;
 }
@@ -141,8 +136,13 @@ select {
 }
 
 .JoinButton {
-  @include button-format($darker-accent, #FFF, 70px);
+  @include button-format($darker-accent, #FFF, 100px);
   margin-top: auto;
+}
+
+.AttendingSpeakerButton {
+  margin: 5px 0 15px 0;
+  width: 100px;
 }
 
 #SpikeStatusSort {
