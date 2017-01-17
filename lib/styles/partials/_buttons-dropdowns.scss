@@ -123,24 +123,14 @@ select {
   text-align: center;
 }
 
-//this whole area seems to be the problem
-// .StudentSpikesButtons {
-//   // // below removed
-//   // display: flex;
-//   // // // below removed
-//   // justify-content: space-between;
-//   // width: 30%;
-//   // width: 25%;
-  .ShowMapButton,
-  .FilterLabel,
-  #UserFilterByDate {
-    margin: 10px auto;
-    display: block;
-    float: none;
-    min-width: 150px;
-    // margin: 0;
-  }
-// }
+.ShowMapButton,
+.FilterLabel,
+#UserFilterByDate {
+  display: block;
+  float: none;
+  margin: 10px auto;
+  min-width: 150px;
+}
 
 .AdminShowMapButton {
   display: inline-block;
@@ -151,20 +141,6 @@ select {
   @include button-format($darker-accent, #FFF, 70px);
   margin-top: auto;
 }
-
-// .ShowMapButton {
-//   margin-right: 10px;
-// }
-
-// @media screen and (max-width: 1070px) {
-//   .StudentSpikesButtons {
-//     // width: 40%;
-//   }
-//
-//   .SortSpikes {
-//     width: 40%;
-//   }
-// }
 
 @media screen and (max-width: 1070px) {
   .SortOptions,
@@ -177,8 +153,8 @@ select {
 
   .SortOptions {
     margin: 0 auto;
-    text-align: center;
     margin-bottom: 10px;
+    text-align: center;
   }
 
   .SortOptionsButtons {
@@ -205,7 +181,6 @@ select {
   }
 }
 
-// changed below to 795px
 @media screen and (max-width: 770px) {
 
   .AddSpeakerButton {
@@ -282,7 +257,6 @@ select {
     justify-content: center;
     margin: auto;
     margin-top: 15px;
-    // padding: 0;
     text-align: center;
     width: 120px;
   }
@@ -292,14 +266,10 @@ select {
     margin: 15px 10px;
     padding: 10px;
   }
-}
-
-@media screen and (max-width: 320px) {
   .SortSpikes {
-    display: block;
-    // flex-direction: column;
+    float: none;
+    margin-left: 0;
     label {
-      // flex-direction: column;
       display: block;
     }
   }
