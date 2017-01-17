@@ -17,13 +17,11 @@
   background: #FFF;
 }
 
-
-
 // changed width to 795px
 @media screen and (max-width: 780px) {
   .AllSpikes {
     margin-top: 20px;
-    padding: 20px 10px;
+    padding: 0 10px 20px 10px;
   }
 }
 

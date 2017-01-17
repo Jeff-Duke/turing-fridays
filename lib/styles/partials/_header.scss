@@ -39,6 +39,19 @@ header {
   text-align: right;
 }
 
+@media screen and (max-width: 700px) {
+  .HeaderTitle {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .HeaderTitle {
+    font-size: 34px;
+    margin: 5px 0;
+  }
+}
+
 @media screen and (max-width: 420px) {
   header {
     height: 390px;

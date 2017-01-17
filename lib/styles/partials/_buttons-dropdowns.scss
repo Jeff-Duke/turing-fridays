@@ -3,9 +3,8 @@ select {
 }
 
 #LogInButton {
-  @include button-format($darker-accent, $off-white-color, 100px, 26px);
+  @include button-format($darker-accent, $off-white-color, 150px);
   margin-top: 40px;
-  padding: 8px;
 }
 
 .DropdownSelect {
@@ -146,6 +145,12 @@ select {
 //   margin-right: 10px;
 // }
 
+@media screen and (max-width: 1050px) {
+  .StudentSpikesButtons {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 975px) {
   .SortOptions,
   .SortSpikes,
@@ -177,46 +182,7 @@ select {
   .AddGearUpButton {
     margin: 0;
   }
-
 }
-
-@media screen and (max-width: 420px) {
-  .AdminButtons {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    button {
-      margin: 8px;
-      padding: 10px;
-      width: 90%;
-    }
-  }
-
-  .SignOut {
-    font-size: 16px;
-    order: 3;
-    padding: 5px;
-    width: 90px;
-  }
-
-  .AddSpikeButton {
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    margin: auto;
-    margin-top: 15px;
-    padding: 10px;
-    text-align: center;
-    width: 120px;
-  }
-
-  .SubmitButton,
-  .CancelButton {
-    margin: 15px 10px;
-    padding: 10px;
-  }
-}
-
 
 // changed below to 795px
 @media screen and (max-width: 770px) {
@@ -238,8 +204,66 @@ select {
   .ShowMapButton {
     display: none;
   }
+
   .SortSpikes {
     margin: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .OpenAdminsListButton,
+  .ShowMapButton,
+  .AddSpeakerButton,
+  .AddGearUpButton,
+  .AddSpikeButton {
+    font-size: 14px;
+  }
+
+  .AddSpikeButton,
+  .SignOut {
+    height: 25px;
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .AddSpikeButton {
+    padding: 0;
+  }
+
+  .AdminButtons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    button {
+      font-size: 16px;
+      margin: 8px;
+      width: 70%;
+    }
+  }
+
+  .SignOut {
+    font-size: 16px;
+    order: 3;
+    padding: 5px;
+    width: 90px;
+  }
+
+  .AddSpikeButton {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    width: 120px;
+  }
+
+  .SubmitButton,
+  .CancelButton {
+    margin: 15px 10px;
+    padding: 10px;
   }
 }
 
@@ -251,11 +275,5 @@ select {
       // flex-direction: column;
       display: block;
     }
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .StudentSpikesButtons {
-    width: 40%;
   }
 }
