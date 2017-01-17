@@ -124,19 +124,23 @@ select {
 }
 
 //this whole area seems to be the problem
-.StudentSpikesButtons {
-  // // below removed
-  display: flex;
-  // // below removed
-  justify-content: space-between;
-  margin: 20px auto;
-  // width: 30%;
-  width: 25%;
+// .StudentSpikesButtons {
+//   // // below removed
+//   // display: flex;
+//   // // // below removed
+//   // justify-content: space-between;
+//   // width: 30%;
+//   // width: 25%;
   .ShowMapButton,
-  .DropdownSelect {
+  .FilterLabel,
+  #UserFilterByDate {
+    margin:10px auto;
+    display: block;
+    float: none;
     min-width: 150px;
+    // margin: 0;
   }
-}
+// }
 
 .JoinButton {
   @include button-format($darker-accent, #FFF, 70px);
@@ -149,7 +153,7 @@ select {
 
 @media screen and (max-width: 1070px) {
   .StudentSpikesButtons {
-    width: 40%;
+    // width: 40%;
   }
 
   .SortSpikes {
@@ -189,6 +193,10 @@ select {
   .AddSpeakerButton,
   .AddGearUpButton {
     margin: 0;
+  }
+
+  .StudentShowMapButton {
+    margin: 0 auto;
   }
 }
 
