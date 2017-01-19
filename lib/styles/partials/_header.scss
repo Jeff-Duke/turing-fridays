@@ -1,6 +1,6 @@
 header {
   background: #3c4040;
-  height: 140px;
+  height: 160px;
   padding: 10px;
 }
 
@@ -26,6 +26,7 @@ header {
   display: block;
   float: right;
   height: 70px;
+  margin-right: 15px;
   margin-top: 10px;
   width: 70px;
 }
@@ -34,20 +35,34 @@ header {
   color: #FFF;
   font-family: $open-sans-font;
   font-size: 12px;
-  margin-top: 100px;
+  margin-top: 110px;
   padding: 5px 0 8px 0;
   text-align: right;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 700px) {
   header {
-    height: 390px;
+    height: 150px
+  }
+
+  .HeaderTitle {
+    font-size: 38px;
+  }
+
+  .LoginInfo {
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    height: 320px;
     margin-bottom: 10px;
   }
 
   .HeaderTitle {
     font-size: 34px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .LoginInfo {
@@ -56,12 +71,13 @@ header {
     flex-direction: column;
     float: none;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .UserPhoto {
     height: 100px;
-    margin: 10px 0 0 0;
+    margin-right: 10px;
+    margin-top: 15px;
     width: 100px;
   }
 
@@ -72,5 +88,4 @@ header {
   .Logo {
     display: none;
   }
-
 }

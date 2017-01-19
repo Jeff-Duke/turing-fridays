@@ -7,9 +7,15 @@
   padding-top: 150px;
 }
 
+@media screen and (max-width: 600px) {
+  .LoginTitle {
+    font-size: 38px;
+  }
+}
+
 @media screen and (max-width: 420px) {
-  h1 {
-    font-size: 40px;
+  .LoginTitle {
+    font-size: 34px;
     line-height: 50px;
     text-align: center;
   }
