@@ -8,6 +8,7 @@
   font-weight: bold;
   line-height: 30px;
   margin: 30px auto;
+  padding-bottom: 10px;
   text-align: center;
   width: 80%;
   h2 {
@@ -25,15 +26,20 @@
 }
 
 .FridayLink {
-  color: $dark-gray-color;
+  @include button-format ($darker-accent, #FFF, $width: null, $size: 18px)
   font-weight: bold;
+  margin: 5px 0;
+  padding: 2px 5px;
   text-decoration: none;
-  &:hover {
-    color: $teal-accent;
+}
+
+@media screen and (max-width: 375px) {
+  .FridayLink {
+    font-size: 18px;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 410px) {
   .GuestSpeaker,
   .GearUp {
     margin-top: 40px;
