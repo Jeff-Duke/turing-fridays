@@ -8,6 +8,7 @@
   font-weight: bold;
   line-height: 30px;
   margin: 30px auto;
+  padding-bottom: 10px;
   text-align: center;
   width: 80%;
   h2 {
@@ -17,6 +18,9 @@
   p {
     margin: 5px 0;
   }
+  .Count {
+    margin-bottom: 15px;
+  }
   span {
     color: darken($teal-accent, 16%);
     letter-spacing: .03em;
@@ -25,15 +29,21 @@
 }
 
 .FridayLink {
-  color: $dark-gray-color;
-  font-weight: bold;
+  @include button-format ($darker-accent, #FFF, $size: 18px)
+  height: 30px;
+  margin: 5px 0;
+  padding: 2px 10px;
   text-decoration: none;
-  &:hover {
-    color: $teal-accent;
+}
+
+@media screen and (max-width: 375px) {
+  .FridayLink {
+    font-size: 16px;
+    padding: 2px 7px;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 410px) {
   .GuestSpeaker,
   .GearUp {
     margin-top: 40px;
@@ -42,5 +52,11 @@
     span {
       display: block;
     }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .FridayLink {
+    margin: 15px 0;
   }
 }
