@@ -1,6 +1,20 @@
 {
   "rules": {
-    ".read": "true",
+  "spikes": {
+    ".read": "auth != null",
     ".write": "auth != null"
-  }
+  },
+    "speakers": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  },
+  "admins": {
+    ".read": "auth != null",
+    ".write": "auth.email !== 'peterspringer829@gmail.com'"
+  },
+  "gearUp": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  },
+ }
 }
