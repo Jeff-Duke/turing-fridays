@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline --content-base ./public",
     "build": "webpack",
-    "test": "mocha --require test/helpers/setup.js"
+    "test": "mocha --require test/helpers/setup.js",
+    "deploy": "npm run build && firebase deploy"
   },
   "repository": {
     "type": "git",
