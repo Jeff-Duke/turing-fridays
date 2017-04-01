@@ -10,7 +10,7 @@
   },
   "admins": {
     ".read": "auth != null",
-    ".write": "auth.email !== 'peterspringer829@gmail.com'"
+    ".write": "auth.email !== 'ilana.corson@gmail.com'"
   },
   "gearUp": {
     ".read": "auth != null",
